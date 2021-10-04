@@ -1,2 +1,2 @@
 # Housing-Trends
-Some cool final class project description here.
+Housing trends over time in the state of Virginia.
