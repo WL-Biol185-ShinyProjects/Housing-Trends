@@ -1,0 +1,99 @@
+ID Race,Race,ID Ethnicity,Ethnicity,ID Year,Year,Hispanic Population Moe,Geography,ID Geography,Slug Geography,Population,share
+0,"White Alone",0,"Not Hispanic or Latino",2019,"2019",3017,"Virginia","04000US51","virginia",5212705,0.6107074449720046
+0,"White Alone",1,"Hispanic or Latino",2019,"2019",12803,"Virginia","04000US51","virginia",501941,0.058806148753227545
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2019,"2019",11662,"Virginia","04000US51","virginia",1625942,0.19049128705588964
+1,"Black or African American Alone",1,"Hispanic or Latino",2019,"2019",4980,"Virginia","04000US51","virginia",33966,0.00397937137741712
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2019,"2019",2366,"Virginia","04000US51","virginia",17497,0.0020499046396592873
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2019,"2019",2012.9999999999998,"Virginia","04000US51","virginia",5891,0.000690174786090922
+3,"Asian Alone",0,"Not Hispanic or Latino",2019,"2019",6330,"Virginia","04000US51","virginia",560030,0.06561171031310457
+3,"Asian Alone",1,"Hispanic or Latino",2019,"2019",1878.9999999999998,"Virginia","04000US51","virginia",5613,0.0006576050032809956
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2019,"2019",1047,"Virginia","04000US51","virginia",4347,0.0005092836182544963
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2019,"2019",390,"Virginia","04000US51","virginia",692,0.00008107298454844983
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2019,"2019",4303,"Virginia","04000US51","virginia",23329,0.002733167133715009
+5,"Some Other Race Alone",1,"Hispanic or Latino",2019,"2019",12999,"Virginia","04000US51","virginia",223334,0.026165251345583087
+6,"Two or More Races",0,"Not Hispanic or Latino",2019,"2019",12225.976443621998,"Virginia","04000US51","virginia",263515,0.03087275653653867
+6,"Two or More Races",1,"Hispanic or Latino",2019,"2019",6908.674040653532,"Virginia","04000US51","virginia",56717,0.0066448214806855916
+0,"White Alone",0,"Not Hispanic or Latino",2018,"2018",2491,"Virginia","04000US51","virginia",5224295,0.6133468190007026
+0,"White Alone",1,"Hispanic or Latino",2018,"2018",15085,"Virginia","04000US51","virginia",513285,0.06026109206903049
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2018,"2018",11689,"Virginia","04000US51","virginia",1597761,0.18758160227808376
+1,"Black or African American Alone",1,"Hispanic or Latino",2018,"2018",5472,"Virginia","04000US51","virginia",33751,0.003962461631300054
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2018,"2018",2653,"Virginia","04000US51","virginia",18281,0.0021462404397438978
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2018,"2018",2077,"Virginia","04000US51","virginia",3984,0.0004677327231518893
+3,"Asian Alone",0,"Not Hispanic or Latino",2018,"2018",7931.999999999999,"Virginia","04000US51","virginia",550696,0.06465324791888875
+3,"Asian Alone",1,"Hispanic or Latino",2018,"2018",1811.0000000000002,"Virginia","04000US51","virginia",4726,0.0005548455947830895
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2018,"2018",1084,"Virginia","04000US51","virginia",4587,0.000538526606701234
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2018,"2018",643,"Virginia","04000US51","virginia",1072,0.00012585579297661278
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2018,"2018",3745,"Virginia","04000US51","virginia",20390,0.0023938429279786702
+5,"Some Other Race Alone",1,"Hispanic or Latino",2018,"2018",13047,"Virginia","04000US51","virginia",195353,0.02293498761694052
+6,"Two or More Races",0,"Not Hispanic or Latino",2018,"2018",12767.292782731976,"Virginia","04000US51","virginia",288865,0.03391355749831087
+6,"Two or More Races",1,"Hispanic or Latino",2018,"2018",7414.032371118971,"Virginia","04000US51","virginia",60639,0.007119187901407483
+0,"White Alone",0,"Not Hispanic or Latino",2017,"2017",2732,"Virginia","04000US51","virginia",5226540,0.6170634780083164
+0,"White Alone",1,"Hispanic or Latino",2017,"2017",14622.999999999998,"Virginia","04000US51","virginia",488159,0.05763374820838676
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2017,"2017",9999,"Virginia","04000US51","virginia",1595039,0.18831584813259
+1,"Black or African American Alone",1,"Hispanic or Latino",2017,"2017",4824,"Virginia","04000US51","virginia",32602,0.0038491054330450224
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2017,"2017",3288,"Virginia","04000US51","virginia",20568,0.0024283295671084604
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2017,"2017",1644,"Virginia","04000US51","virginia",6224,0.0007348270724272198
+3,"Asian Alone",0,"Not Hispanic or Latino",2017,"2017",7112.000000000001,"Virginia","04000US51","virginia",539382,0.06368131362145545
+3,"Asian Alone",1,"Hispanic or Latino",2017,"2017",2546,"Virginia","04000US51","virginia",6394,0.0007548978632872178
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2017,"2017",788,"Virginia","04000US51","virginia",2987,0.00035265560175772905
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2017,"2017",736,"Virginia","04000US51","virginia",1238,0.00014616258285104404
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2017,"2017",3085,"Virginia","04000US51","virginia",19779,0.0023351774848229404
+5,"Some Other Race Alone",1,"Hispanic or Latino",2017,"2017",13824,"Virginia","04000US51","virginia",199722,0.023579873483179498
+6,"Two or More Races",0,"Not Hispanic or Latino",2017,"2017",12077.662232402427,"Virginia","04000US51","virginia",275063,0.03247489380190365
+6,"Two or More Races",1,"Hispanic or Latino",2017,"2017",6679.01377450294,"Virginia","04000US51","virginia",56323,0.006649689138868622
+0,"White Alone",0,"Not Hispanic or Latino",2016,"2016",2770,"Virginia","04000US51","virginia",5235564,0.6224065028588385
+0,"White Alone",1,"Hispanic or Latino",2016,"2016",11727,"Virginia","04000US51","virginia",471471,0.05604871152551271
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2016,"2016",10985,"Virginia","04000US51","virginia",1575478,0.18729362343981223
+1,"Black or African American Alone",1,"Hispanic or Latino",2016,"2016",3507,"Virginia","04000US51","virginia",26390,0.003137256580273825
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2016,"2016",2946,"Virginia","04000US51","virginia",19718,0.002344085837432333
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2016,"2016",1442,"Virginia","04000US51","virginia",3438,0.0004087111831368476
+3,"Asian Alone",0,"Not Hispanic or Latino",2016,"2016",7315,"Virginia","04000US51","virginia",527900,0.06275701965617855
+3,"Asian Alone",1,"Hispanic or Latino",2016,"2016",1000,"Virginia","04000US51","virginia",4420,0.0005254518410310839
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2016,"2016",1901,"Virginia","04000US51","virginia",6769,0.0008047021520224903
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2016,"2016",803,"Virginia","04000US51","virginia",1610,0.00019139761630317762
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2016,"2016",3877,"Virginia","04000US51","virginia",23107,0.002746971875725171
+5,"Some Other Race Alone",1,"Hispanic or Latino",2016,"2016",11989,"Virginia","04000US51","virginia",205520,0.024432321802875197
+6,"Two or More Races",0,"Not Hispanic or Latino",2016,"2016",11765.522002869231,"Virginia","04000US51","virginia",262661,0.031225272854539715
+6,"Two or More Races",1,"Hispanic or Latino",2016,"2016",4831.674037018639,"Virginia","04000US51","virginia",47762,0.005677970776318242
+0,"White Alone",0,"Not Hispanic or Latino",2015,"2015",4203,"Virginia","04000US51","virginia",5239479,0.6250129279602166
+0,"White Alone",1,"Hispanic or Latino",2015,"2015",13228,"Virginia","04000US51","virginia",478572,0.05708844084684313
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2015,"2015",10339,"Virginia","04000US51","virginia",1583049,0.18884054895429353
+1,"Black or African American Alone",1,"Hispanic or Latino",2015,"2015",4630,"Virginia","04000US51","virginia",29782,0.0035526690765458114
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2015,"2015",1790,"Virginia","04000US51","virginia",16415,0.001958131182979635
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2015,"2015",2778,"Virginia","04000US51","virginia",6358,0.0007584403327069461
+3,"Asian Alone",0,"Not Hispanic or Latino",2015,"2015",6153,"Virginia","04000US51","virginia",519910,0.06201961518994469
+3,"Asian Alone",1,"Hispanic or Latino",2015,"2015",1426,"Virginia","04000US51","virginia",4566,0.0005446741992985083
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2015,"2015",1048,"Virginia","04000US51","virginia",5057,0.0006032451655393246
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2015,"2015",312,"Virginia","04000US51","virginia",449,0.00005356082248905612
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2015,"2015",4302,"Virginia","04000US51","virginia",23466,0.0027992388875906255
+5,"Some Other Race Alone",1,"Hispanic or Latino",2015,"2015",12970,"Virginia","04000US51","virginia",179727,0.021439478716014673
+6,"Two or More Races",0,"Not Hispanic or Latino",2015,"2015",8941.571058824058,"Virginia","04000US51","virginia",242264,0.028899463473248756
+6,"Two or More Races",1,"Hispanic or Latino",2015,"2015",6323.985847548996,"Virginia","04000US51","virginia",53899,0.0064295651922887205
+0,"White Alone",0,"Not Hispanic or Latino",2014,"2014",3799.0000000000005,"Virginia","04000US51","virginia",5242578,0.6296416086446195
+0,"White Alone",1,"Hispanic or Latino",2014,"2014",12623,"Virginia","04000US51","virginia",497103,0.059702827994560365
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2014,"2014",9407,"Virginia","04000US51","virginia",1572488,0.18885820561837333
+1,"Black or African American Alone",1,"Hispanic or Latino",2014,"2014",4805,"Virginia","04000US51","virginia",28961,0.003478260242948569
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2014,"2014",1999,"Virginia","04000US51","virginia",17392,0.0020888057092421364
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2014,"2014",1257,"Virginia","04000US51","virginia",3841,0.00046130995453076397
+3,"Asian Alone",0,"Not Hispanic or Latino",2014,"2014",6904,"Virginia","04000US51","virginia",507648,0.06096929856746505
+3,"Asian Alone",1,"Hispanic or Latino",2014,"2014",1290,"Virginia","04000US51","virginia",3223,0.00038708721256252334
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2014,"2014",1609,"Virginia","04000US51","virginia",4336,0.0005207602090198887
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2014,"2014",252.00000000000003,"Virginia","04000US51","virginia",217,0.000026062030755838525
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2014,"2014",4569,"Virginia","04000US51","virginia",20639,0.002478775358385951
+5,"Some Other Race Alone",1,"Hispanic or Latino",2014,"2014",11216,"Virginia","04000US51","virginia",154234,0.018523738486617508
+6,"Two or More Races",0,"Not Hispanic or Latino",2014,"2014",10034.69600934677,"Virginia","04000US51","virginia",229237,0.02753171310772422
+6,"Two or More Races",1,"Hispanic or Latino",2014,"2014",5462.828022187775,"Virginia","04000US51","virginia",44392,0.005331546863194396
+0,"White Alone",0,"Not Hispanic or Latino",2013,"2013",2185,"Virginia","04000US51","virginia",5246262,0.6351095376074175
+0,"White Alone",1,"Hispanic or Latino",2013,"2013",11307,"Virginia","04000US51","virginia",480624,0.05818407208847508
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2013,"2013",8467,"Virginia","04000US51","virginia",1563768,0.1893088777124124
+1,"Black or African American Alone",1,"Hispanic or Latino",2013,"2013",4860,"Virginia","04000US51","virginia",28658,0.003469321419470353
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2013,"2013",1828,"Virginia","04000US51","virginia",14577,0.0017646834507509014
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2013,"2013",2029.0000000000002,"Virginia","04000US51","virginia",5038,0.0006098974566017041
+3,"Asian Alone",0,"Not Hispanic or Latino",2013,"2013",5883,"Virginia","04000US51","virginia",481270,0.058262276486443464
+3,"Asian Alone",1,"Hispanic or Latino",2013,"2013",1334,"Virginia","04000US51","virginia",3227,0.0003906588115231638
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2013,"2013",1291,"Virginia","04000US51","virginia",4935,0.0005974283343250119
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2013,"2013",616,"Virginia","04000US51","virginia",873,0.00010568489075293524
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2013,"2013",2924,"Virginia","04000US51","virginia",15271,0.0018486987018190998
+5,"Some Other Race Alone",1,"Hispanic or Latino",2013,"2013",10890,"Virginia","04000US51","virginia",147391,0.017843071859067444
+6,"Two or More Races",0,"Not Hispanic or Latino",2013,"2013",10103.94700104865,"Virginia","04000US51","virginia",226360,0.02740301474322385
+6,"Two or More Races",1,"Hispanic or Latino",2013,"2013",5757.361201105937,"Virginia","04000US51","virginia",42151,0.005102776437717037
