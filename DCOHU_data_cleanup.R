@@ -52,3 +52,6 @@ clean_dcohu$county <- gsub("\\s*\\w*$", "", clean_dcohu$county)
 
 # Change the unit column's type from factor to numeric
 clean_dcohu$units <- as.numeric(as.character(clean_dcohu$units))
+
+# Create a state column to join only with counties in VA
+clean_dcohu$state <- factor(51)
