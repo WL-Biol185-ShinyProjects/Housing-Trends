@@ -16,6 +16,7 @@ tidy_pop_data$Census <- NULL
 tidy_pop_data$`Estimates Base`<-NULL
 tidy_pop_data <- tidy_pop_data[-c(1,135:140),] 
 colnames(tidy_pop_data)[1] <- "county"
+View(tidy_pop_data)
 
 #gathering my data
 yearly_pop_est <- gather(tidy_pop_data, key = "year", value = "pop_estimate", `2010`:`2019`)
