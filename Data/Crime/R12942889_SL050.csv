@@ -1,0 +1,95 @@
+"FIPS","Name of Area","Qualifying Name","State","County","Total Violent and Property Crimes Rate","Total Violent and Property Crimes Rate: Violent Crimes Rate","Total Violent and Property Crimes Rate: Property Crimes Rate"
+Geo_FIPS,Geo_NAME,Geo_QNAME,Geo_STATE,Geo_COUNTY,SE_T002_001,SE_T002_002,SE_T002_003
+"51001","Accomack County","Accomack County, Virginia","51","001",1865.20093710578,174.205562563825,1690.99537454196
+"51005","Alleghany County","Alleghany County, Virginia","51","005",1060.04901960784,91.9117647058823,968.137254901961
+"51007","Amelia County","Amelia County, Virginia","51","007",1176.2860727729,133.312421580928,1042.97365119197
+"51009","Amherst County","Amherst County, Virginia","51","009",1721.66874221669,87.173100871731,1634.49564134496
+"51011","Appomattox County","Appomattox County, Virginia","51","011",933.146703992535,86.6493367993068,846.497367193228
+"51015","Augusta County","Augusta County, Virginia","51","015",1224.3735763098,116.6070072676,1107.7665690422
+"51019","Bedford County","Bedford County, Virginia","51","019",1164.08718044015,57.0761103294486,1107.0110701107
+"51021","Bland County","Bland County, Virginia","51","021",796.46017699115,73.7463126843658,722.713864306785
+"51023","Botetourt County","Botetourt County, Virginia","51","023",934.890475614184,69.5873169551011,865.303158659083
+"51025","Brunswick County","Brunswick County, Virginia","51","025",914.865101101334,69.925994988637,844.939106112697
+"51027","Buchanan County","Buchanan County, Virginia","51","027",2155.89417280643,113.027461486939,2042.86671131949
+"51029","Buckingham County","Buckingham County, Virginia","51","029",1520.09318578917,133.954571927781,1386.13861386139
+"51031","Campbell County","Campbell County, Virginia","51","031",1543.45763701379,89.3964825220755,1454.06115449172
+"51033","Caroline County","Caroline County, Virginia","51","033",1862.76903756933,129.068266648062,1733.70077092127
+"51035","Carroll County","Carroll County, Virginia","51","035",1931.33761779495,93.2369884452732,1838.10062934967
+"51036","Charles City County","Charles City County, Virginia","51","036",304.245609182686,69.1467293597013,235.098879822984
+"51037","Charlotte County","Charlotte County, Virginia","51","037",1135.90912726982,167.986561075114,967.922566194704
+"51043","Clarke County","Clarke County, Virginia","51","043",1054.18511490618,63.2511068943707,990.934008011807
+"51045","Craig County","Craig County, Virginia","51","045",286.916602907422,95.6388676358072,191.277735271614
+"51047","Culpeper County","Culpeper County, Virginia","51","047",697.512206463613,73.9785673522014,623.533639111412
+"51049","Cumberland County","Cumberland County, Virginia","51","049",429.184549356223,89.8293242838607,339.355225072363
+"51051","Dickenson County","Dickenson County, Virginia","51","051",1325.72153504599,101.490643831272,1224.23089121472
+"51053","Dinwiddie County","Dinwiddie County, Virginia","51","053",1687.79376157243,153.112092294545,1534.68166927788
+"51057","Essex County","Essex County, Virginia","51","057",803.284541235273,116.029989289539,687.254551945734
+"51061","Fauquier County","Fauquier County, Virginia","51","061",1092.2018001664,57.4843052719159,1034.71749489449
+"51063","Floyd County","Floyd County, Virginia","51","063",1266.80958877412,64.9645942961086,1201.84499447801
+"51065","Fluvanna County","Fluvanna County, Virginia","51","065",873.009768479348,49.9961541419891,823.013614337359
+"51067","Franklin County","Franklin County, Virginia","51","067",1188.83101236668,69.0974805995535,1119.73353176712
+"51069","Frederick County","Frederick County, Virginia","51","069",1998.76728009157,95.5986867759343,1903.16859331564
+"51071","Giles County","Giles County, Virginia","51","071",1169.31711880262,140.318054256314,1028.9990645463
+"51073","Gloucester County","Gloucester County, Virginia","51","073",1510.38559574814,94.9075329464722,1415.47806280167
+"51075","Goochland County","Goochland County, Virginia","51","075",1109.14344300494,149.128530151925,960.014912853015
+"51077","Grayson County","Grayson County, Virginia","51","077",1230.06833712984,117.149365440937,1112.9189716889
+"51079","Greene County","Greene County, Virginia","51","079",1486.94908001712,139.067180145486,1347.88189987163
+"51081","Greensville County","Greensville County, Virginia","51","081",1518.04230609706,132.725010369141,1385.31729572791
+"51083","Halifax County","Halifax County, Virginia","51","083",1283.29768617538,88.8864198216716,1194.41126635371
+"51085","Hanover County","Hanover County, Virginia","51","085",1165.29132283071,53.0132533133283,1112.27806951738
+"51089","Henry County","Henry County, Virginia","51","089",3202.31257273717,315.350827795923,2886.96174494125
+"51093","Isle of Wight County","Isle of Wight County, Virginia","51","093",1167.99909281624,85.0484776322504,1082.95061518399
+"51097","King and Queen County","King and Queen County, Virginia","51","097",1066.55290102389,142.207053469852,924.345847554039
+"51099","King George County","King George County, Virginia","51","099",1470.40652415668,90.6132872029326,1379.79323695375
+"51101","King William County","King William County, Virginia","51","101",682.059946186096,43.8020148926851,638.257931293411
+"51103","Lancaster County","Lancaster County, Virginia","51","103",1154.18502202643,96.9162995594714,1057.26872246696
+"51105","Lee County","Lee County, Virginia","51","105",896.231929236644,124.693137980751,771.538791255894
+"51107","Loudoun County","Loudoun County, Virginia","51","107",929.03028449067,72.4992352401346,856.531049250535
+"51109","Louisa County","Louisa County, Virginia","51","109",1050.77763515329,83.5845846144661,967.193050538822
+"51111","Lunenburg County","Lunenburg County, Virginia","51","111",986.407766990291,69.9029126213592,916.504854368932
+"51113","Madison County","Madison County, Virginia","51","113",1015.76713159491,113.705275924803,902.061855670103
+"51115","Mathews County","Mathews County, Virginia","51","115",1372.308378891,66.9418721410242,1305.36650674997
+"51117","Mecklenburg County","Mecklenburg County, Virginia","51","117",1203.26600773528,76.738903554546,1126.52710418074
+"51119","Middlesex County","Middlesex County, Virginia","51","119",1596.82481078087,110.762414620639,1486.06239616024
+"51121","Montgomery County","Montgomery County, Virginia","51","121",569.374004913487,33.7406817726511,535.633323140836
+"51125","Nelson County","Nelson County, Virginia","51","125",1310.36317679926,39.9095383796727,1270.45363841958
+"51127","New Kent County","New Kent County, Virginia","51","127",1509.01141089901,159.965873946891,1349.04553695212
+"51131","Northampton County","Northampton County, Virginia","51","131",1624.83912483912,120.656370656371,1504.18275418275
+"51133","Northumberland County","Northumberland County, Virginia","51","133",1248.38917525773,72.4871134020619,1175.90206185567
+"51135","Nottoway County","Nottoway County, Virginia","51","135",597.897916797785,44.0556359745736,553.842280823211
+"51137","Orange County","Orange County, Virginia","51","137",729.215871516297,44.2843646669816,684.931506849315
+"51139","Page County","Page County, Virginia","51","139",879.533138807837,50.0208420175073,829.512296790329
+"51141","Patrick County","Patrick County, Virginia","51","141",2085.14808362369,119.773519163763,1965.37456445993
+"51143","Pittsylvania County","Pittsylvania County, Virginia","51","143",1115.59945719065,69.4291034178054,1046.17035377284
+"51145","Powhatan County","Powhatan County, Virginia","51","145",901.061329154498,46.2995939881758,854.761735166322
+"51147","Prince Edward County","Prince Edward County, Virginia","51","147",318.649614606209,51.6729104766826,266.976704129527
+"51155","Pulaski County","Pulaski County, Virginia","51","155",2204.37998215776,94.9667616334283,2109.41322052433
+"51157","Rappahannock County","Rappahannock County, Virginia","51","157",1068.8042752171,53.440213760855,1015.36406145625
+"51159","Richmond County","Richmond County, Virginia","51","159",489.715964740451,108.825769942322,380.890194798128
+"51163","Rockbridge County","Rockbridge County, Virginia","51","163",1293.10344827586,102.204052612869,1190.89939566299
+"51165","Rockingham County","Rockingham County, Virginia","51","165",412.403221413843,54.4683499980547,357.934871415788
+"51167","Russell County","Russell County, Virginia","51","167",1301.60170289982,73.2805248281397,1228.32117807168
+"51169","Scott County","Scott County, Virginia","51","169",2029.52833064762,95.8146422194155,1933.7136884282
+"51171","Shenandoah County","Shenandoah County, Virginia","51","171",1054.79743632193,66.2204668542913,988.576969467635
+"51173","Smyth County","Smyth County, Virginia","51","173",1223.85263815173,124.882922260381,1098.96971589135
+"51175","Southampton County","Southampton County, Virginia","51","175",1620.80663399925,102.310053308923,1518.49658069032
+"51177","Spotsylvania County","Spotsylvania County, Virginia","51","177",2283.23305801014,216.306289706224,2066.92676830392
+"51179","Stafford County","Stafford County, Virginia","51","179",1604.15673995417,129.330882853448,1474.82585710072
+"51181","Surry County","Surry County, Virginia","51","181",965.417867435158,201.729106628242,763.688760806916
+"51183","Sussex County","Sussex County, Virginia","51","183",1463.89876767844,74.4355305599206,1389.46323711852
+"51185","Tazewell County","Tazewell County, Virginia","51","185",1344.81987021705,58.1785634370105,1286.64130678004
+"51187","Warren County","Warren County, Virginia","51","187",876.494023904383,50.464807436919,826.029216467463
+"51191","Washington County","Washington County, Virginia","51","191",1876.31314515392,58.4635059833744,1817.84963917055
+"51193","Westmoreland County","Westmoreland County, Virginia","51","193",477.055883689232,56.792367105861,420.263516583371
+"51195","Wise County","Wise County, Virginia","51","195",1167.11772665765,89.406533926155,1077.71119273149
+"51197","Wythe County","Wythe County, Virginia","51","197",660.325715067743,65.0061584781716,595.319556589572
+"51199","York County","York County, Virginia","51","199",1972.34462847592,113.964443093755,1858.38018538216
+"51AAA","Albemarle County Police Department","Albemarle County Police Department, Virginia","51","AAA",,,
+"51AAB","Arlington County Police Department","Arlington County Police Department, Virginia","51","AAB",,,
+"51AAC","Chesterfield County Police Department","Chesterfield County Police Department, Virginia","51","AAC",,,
+"51AAD","Fairfax County Police Department","Fairfax County Police Department, Virginia","51","AAD",,,
+"51AAE","Henrico County Police Department","Henrico County Police Department, Virginia","51","AAE",,,
+"51AAF","James City County Police Department ","James City County Police Department , Virginia","51","AAF",,,
+"51AAG","Prince George County Police Department","Prince George County Police Department, Virginia","51","AAG",,,
+"51AAH","Prince William County Police Department","Prince William County Police Department, Virginia","51","AAH",,,
+"51AAI","Roanoke County Police Department","Roanoke County Police Department, Virginia","51","AAI",,,
