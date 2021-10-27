@@ -2,11 +2,11 @@
 
 library(tidyverse)
 
-race_ethinicity <- read.csv("Data/race-and-ethnicity.csv")
-colnames(race_ethinicity) <- tolower(colnames(race_ethinicity))
+race_ethnicity <- read.csv("Data/race-and-ethnicity.csv")
+colnames(race_ethnicity) <- tolower(colnames(race_ethnicity))
 
 # Race across time
-race_ethinicity %>%
+race_ethnicity %>%
   mutate(year = factor(year)) %>%
   group_by(race, year) %>%
   ggplot(aes(year, population, fill=race)) + geom_bar(stat = "identity", position = "dodge") +

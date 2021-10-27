@@ -16,7 +16,26 @@ navbarPage("Housing Trends",
                     )
                   ),
            # Page for our map
-           tabPanel("Map", leafletOutput("theMap", height = 1000)),
+           tabPanel("Map", #leafletOutput("theMap", height = 1000)),
+                    fluidPage(
+                      
+                      titlePanel("Number of Occupied Housing Units by Year"),
+                      
+                      sidebarLayout(
+                        
+                        sidebarPanel(
+                          sliderInput(
+                            "bins", label = "Number of bins:",
+                            min = 1, value = 30, max = 50
+                          )
+                        ),
+                        
+                        mainPanel(
+                          leafletOutput("theMap", height = 1000)
+                        )
+                      )
+                    )
+           ),
            
            # Page for something else in the future
            tabPanel("Another Page",

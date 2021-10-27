@@ -1,6 +1,8 @@
 library(tidyverse)
 
-racePlot <- race_ethinicity %>%
+source("race_data_cleanup.R")
+
+racePlot <- race_ethnicity %>%
   mutate(year = factor(year)) %>%
   group_by(race, year) %>%
   ggplot(aes(year, population, fill=race)) + geom_bar(stat = "identity", position = "dodge") +

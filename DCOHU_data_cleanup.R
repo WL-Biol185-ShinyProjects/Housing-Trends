@@ -1,34 +1,40 @@
 library(readr)
 library(tidyverse)
-library(data.table)
+# library(data.table)
 
-all_data <- rbindlist(mapply(
-  c,
-  (
-    list.files(
-      path = "Data/Demographic Characteristics for Occupied Housing Units/",
-      pattern = "*csv",
-      full.names = TRUE
-    ) %>%
-      lapply(
-        read.table,
-        header = TRUE,
-        sep = ",",
-        encoding = "UTF-8"
-      )
-  ),
-  (
-    list.files(
-      path = "Data/Demographic Characteristics for Occupied Housing Units/",
-      pattern = "*csv",
-      full.names = TRUE
-    ) %>%
-      basename() %>%
-      as.list()
-  ),
-  SIMPLIFY = FALSE
-),
-fill = T)
+
+all_data <- list.files(path = "Data/Demographic Characteristics for Occupied Housing Units/",     # Identify all csv files in folder
+                       pattern = "*.csv", full.names = TRUE) %>% 
+  lapply(read_csv) %>%                                            # Store all files in list
+  bind_rows                                                       # Combine data sets into one data set 
+
+# all_data <- data.table::rbindlist(mapply(
+#   c,
+#   (
+#     list.files(
+#       path = "Data/Demographic Characteristics for Occupied Housing Units/",
+#       pattern = "*csv",
+#       full.names = TRUE
+#     ) %>%
+#       lapply(
+#         read.table,
+#         header = TRUE,
+#         sep = ",",
+#         encoding = "UTF-8"
+#       )
+#   ),
+#   (
+#     list.files(
+#       path = "Data/Demographic Characteristics for Occupied Housing Units/",
+#       pattern = "*csv",
+#       full.names = TRUE
+#     ) %>%
+#       basename() %>%
+#       as.list()
+#   ),
+#   SIMPLIFY = FALSE
+# ),
+# fill = T)
 
 # Select the county name and occupied housing unit number columns
 tidy_data <- all_data %>%

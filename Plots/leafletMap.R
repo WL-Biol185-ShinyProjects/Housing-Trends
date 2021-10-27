@@ -39,7 +39,7 @@ labels <- sprintf(
 
 
 # Final leaflet map to output
-leaflet(geo) %>% 
-  setView(-79.442778, 37.783889, 6) %>% # Just showing US for now
+leafletMap <- leaflet(geo) %>% 
+  setView(-79.442778, 37.783889, 8) %>% # Just showing US for now
   addPolygons(fillColor = ~pal(geo$units),color = "white", weight = 1, smoothFactor = 0.5,
               opacity = 1.0, fillOpacity = 0.5, label = labels)
