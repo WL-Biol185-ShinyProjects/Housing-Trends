@@ -1,6 +1,6 @@
 library(tidyverse)
 
-source("race_data_cleanup.R")
+source("Data_Prep/race_data_cleanup.R")
 
 racePlot <- race_ethnicity %>%
   mutate(year = factor(year)) %>%

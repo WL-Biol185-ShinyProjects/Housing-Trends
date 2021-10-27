@@ -2,7 +2,7 @@ library(leaflet)
 library(rgdal)
 library(tidyverse)
 
-source("DCOHU_data_cleanup.R")
+source("Data_Prep/DCOHU_data_cleanup.R")
 
 geo <- readOGR("Data/counties.json")
 
