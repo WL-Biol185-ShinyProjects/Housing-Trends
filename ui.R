@@ -25,8 +25,8 @@ navbarPage("Housing Trends",
                         
                         sidebarPanel(
                           sliderInput(
-                            "bins", label = "Year:",
-                            min = 2010, value = 2015, max = 2019
+                            "year", label = "Year:", sep="", animate=TRUE,
+                            min = 2010, value = 2015, max = 2019,
                           )
                         ),
                         
