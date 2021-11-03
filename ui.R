@@ -15,7 +15,7 @@ navbarPage("Housing Trends",
                       )
                     )
                   ),
-           # Page for our map
+           # Page for housing units map
            tabPanel("Map", #leafletOutput("theMap", height = 1000)),
                     fluidPage(
                       
@@ -25,13 +25,34 @@ navbarPage("Housing Trends",
                         
                         sidebarPanel(
                           sliderInput(
-                            "year", label = "Year:", sep="", animate=TRUE,
+                            "housingYear", label = "Year:", sep="", animate=TRUE,
                             min = 2010, value = 2015, max = 2019,
                           )
                         ),
                         
                         mainPanel(
-                          leafletOutput("theMap", height = 1000)
+                          leafletOutput("housingMap", height = 900)
+                        )
+                      )
+                    )
+                  ),
+           # Page for population estimates map
+           tabPanel("Pop Est Map",
+                    fluidPage(
+                      
+                      titlePanel("Population Estimates by Year in VA"),
+                      
+                      sidebarLayout(
+                        
+                        sidebarPanel(
+                          sliderInput(
+                            "popEstYear", label = "Year:", sep="", animate=TRUE,
+                            min = 2010, value = 2015, max = 2019,
+                          )
+                        ),
+                        
+                        mainPanel(
+                          leafletOutput("popEstMap", height = 900)
                         )
                       )
                     )

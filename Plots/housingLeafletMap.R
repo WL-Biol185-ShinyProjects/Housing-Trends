@@ -4,7 +4,7 @@ library(tidyverse)
 
 source("Data_Prep/DCOHU_data_cleanup.R")
 
-leafletMap <- function (originalGeo, yearToUse) {
+housingLeafletMap <- function (originalGeo, yearToUse) {
   # Reset json
   geo <- originalGeo
   
@@ -46,4 +46,4 @@ leafletMap <- function (originalGeo, yearToUse) {
 }
 
 # geo <- readOGR("Data/counties.json")
-# leafletMap(geo, 2015)
+# housingLeafletMap(geo, 2015)
