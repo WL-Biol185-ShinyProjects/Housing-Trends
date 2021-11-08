@@ -74,7 +74,8 @@ navbarPage("Housing Trends",
                           selectInput("variable", "Variable:",
                                       c("Occupied Housing Units" = "housing_units",
                                         "Population Estimates" = "pop_estimate",
-                                        "something else" = "something else"))
+                                        "Education Enrollment" = "enrollment_estimate",
+                                        "Crime Estimates" = "total_violent_pop_crime_estimate"))
                         ),
                         
                         mainPanel(
