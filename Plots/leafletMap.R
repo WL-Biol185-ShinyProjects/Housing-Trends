@@ -3,19 +3,23 @@ library(rgdal)
 library(tidyverse)
 
 source("Data_Prep/population_estimates_cleanup.R")
+source("Data_Prep/DCOHU_data_cleanup.R")
 
-popEstLeafletMap <- function (originalGeo, yearToUse) {
+allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   # Reset json
   geo <- originalGeo
   
   # Filtering by year to show on map
-  # We should replace this with input from something like a dropdown with the years in the decade to choose from
-  to_join <- pop_est %>%
-    filter(year == yearToUse)
-  
+  # to_join <- pop_est %>%
+  #   filter(year == yearToUse)
+
   # Left join our data into the geo json's data
-  newData  <- left_join(geo@data, to_join, by = c("NAME" = "county", 
-                                                  "LSAD" = "LSAD"))
+  newData  <- lapply(list(pop_est, clean_dcohu), function (x) filter(x, year == yearToUse)) %>%
+    reduce(left_join, by = c("county" = "county", 
+                             "LSAD" = "LSAD"))
+  
+  newData <-left_join(geo@data, newData, by=c("NAME" = "county",
+                                              "LSAD" = "LSAD"))
   
   # Replace with the joined version
   geo@data <- newData
@@ -28,23 +32,23 @@ popEstLeafletMap <- function (originalGeo, yearToUse) {
   
   # Prepping colors for chloropleth
   bins <- c(0,20000,30000,40000, 50000, Inf)
-  pal <- colorBin("YlOrRd", domain = geo$pop_estimate, na.color = "transparent", bins = bins)
+  pal <- colorBin("YlOrRd", domain = geo[[dataToUse]], na.color = "transparent", bins = bins)
   
   # Labels to show on hover
   labels <- sprintf(
     "<strong>%s</strong><br/>%g people",
-    geo$NAME, geo$pop_estimate
+    geo$NAME, geo[[dataToUse]]
   ) %>% lapply(htmltools::HTML)
   
   
   # Final leaflet map to output
   leaflet(geo) %>% 
     setView(-79.442778, 37.783889, 8) %>%
-    addPolygons(fillColor = ~pal(geo$pop_estimate),color = "white", weight = 1, smoothFactor = 0.5,
+    addPolygons(fillColor = ~pal(geo[[dataToUse]]),color = "white", weight = 1, smoothFactor = 0.5,
                 opacity = 1.0, fillOpacity = 0.5, label = labels) %>%
-    addLegend( pal=pal, values=geo$pop_estimate, opacity=0.9, title = "Population Estimates", position = "bottomleft" )
+    addLegend( pal=pal, values=geo[[dataToUse]], opacity=0.9, title = "Legend", position = "bottomleft" )
 }
 
 
 # geo <- readOGR("Data/counties.json")
-# popEstLeafletMap(geo, 2015)
+# allLeafletMap(geo, 2010, "housing_units")

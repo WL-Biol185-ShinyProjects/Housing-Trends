@@ -41,7 +41,7 @@ tidy_data <- all_data %>%
   select(2:3)
 
 # Assign proper column names
-colnames(tidy_data) <- c("county", "units")
+colnames(tidy_data) <- c("county", "housing_units")
 
 # Remove every 31st row 
 toDelete <- seq(1, nrow(tidy_data), 31)
@@ -57,7 +57,7 @@ clean_dcohu$LSAD <- word(clean_dcohu$county, -1)
 clean_dcohu$county <- gsub("\\s*\\w*$", "", clean_dcohu$county)
 
 # Change the unit column's type from factor to numeric
-clean_dcohu$units <- as.numeric(as.character(clean_dcohu$units))
+clean_dcohu$housing_units <- as.numeric(as.character(clean_dcohu$housing_units))
 
 # Create a state column to join only with counties in VA
 # clean_dcohu$state <- factor(51)
