@@ -18,7 +18,6 @@ median_age_estimate_2011 <-Census_2011_MedianAgeEstimates_forVA[!(Census_2011_Me
 names(median_age_estimate_2011) <- gsub(" ", ".", names(median_age_estimate_2011))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2011 <- gather(median_age_estimate_2011, key = "Sex", value = "median_age", `Male`,`Both.sexes`, `Female`)
-view(gathered_medianage_estimate_2011)
 
 
 #THIS IS THE 2012 DATASET FOR MEDIAN AGE
@@ -37,7 +36,6 @@ median_age_estimate_2012 <-Census_2012_MedianAgeEstimates_forVA[!(Census_2012_Me
 names(median_age_estimate_2012) <- gsub(" ", ".", names(median_age_estimate_2012))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2012 <- gather(median_age_estimate_2012, key = "Sex", value = "median_age", `Male`,`Both.sexes`, `Female`)
-view(gathered_medianage_estimate_2012)
 
 #THIS IS THE 2013 DATASET FOR MEDIAN AGE
 Census_2013_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2013_MedianAgeEstimates_forVA.csv")
@@ -55,7 +53,6 @@ median_age_estimate_2013 <-Census_2013_MedianAgeEstimates_forVA[!(Census_2013_Me
 names(median_age_estimate_2013) <- gsub(" ", ".", names(median_age_estimate_2013))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2013 <- gather(median_age_estimate_2013, key = "Sex", value = "median_age", `Male`,`Both.sexes`, `Female`)
-view(gathered_medianage_estimate_2013)
 
 #THIS IS THE 2014 DATASET FOR MEDIAN AGE
 Census_2014_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2014_MedianAgeEstimates_forVA.csv")
@@ -73,7 +70,6 @@ median_age_estimate_2014 <-Census_2014_MedianAgeEstimates_forVA[!(Census_2014_Me
 names(median_age_estimate_2014) <- gsub(" ", ".", names(median_age_estimate_2014))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2014 <- gather(median_age_estimate_2014, key = "Sex", value = "median_age", `Male`,`Both.sexes`, `Female`)
-view(gathered_medianage_estimate_2014)
 
 #THIS IS THE 2015 DATASET FOR MEDIAN AGE
 Census_2015_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2015_MedianAgeEstimates_forVA.csv")
@@ -91,7 +87,6 @@ median_age_estimate_2015 <-Census_2015_MedianAgeEstimates_forVA[!(Census_2015_Me
 names(median_age_estimate_2015) <- gsub(" ", ".", names(median_age_estimate_2015))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2015 <- gather(median_age_estimate_2015, key = "Sex", value = "median_age", `Male`,`Both.sexes`, `Female`)
-view(gathered_medianage_estimate_2015)
 
 #THIS IS THE 2016 DATASET FOR MEDIAN AGE
 Census_2016_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2016_MedianAgeEstimates_forVA.csv")
@@ -109,7 +104,6 @@ median_age_estimate_2016 <-Census_2016_MedianAgeEstimates_forVA[!(Census_2016_Me
 names(median_age_estimate_2016) <- gsub(" ", ".", names(median_age_estimate_2016))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2016 <- gather(median_age_estimate_2016, key = "Sex", value = "median_age", `Male`,`Both.Sexes`, `Female`)
-view(gathered_medianage_estimate_2016)
 
 #THIS IS THE 2017 DATASET FOR MEDIAN AGE
 Census_2017_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2017_MedianAgeEstimates_forVA.csv")
@@ -127,7 +121,6 @@ median_age_estimate_2017 <-Census_2017_MedianAgeEstimates_forVA[!(Census_2017_Me
 names(median_age_estimate_2017) <- gsub(" ", ".", names(median_age_estimate_2017))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2017 <- gather(median_age_estimate_2017, key = "Sex", value = "median_age", `Male`,`Both.Sexes`, `Female`)
-view(gathered_medianage_estimate_2017)
 
 #THIS IS THE 2018 DATASET FOR MEDIAN AGE
 Census_2018_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2018_MedianAgeEstimates_forVA.csv")
@@ -145,7 +138,6 @@ median_age_estimate_2018 <-Census_2018_MedianAgeEstimates_forVA[!(Census_2018_Me
 names(median_age_estimate_2018) <- gsub(" ", ".", names(median_age_estimate_2018))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2018 <- gather(median_age_estimate_2018, key = "Sex", value = "median_age", `Male`,`Both.Sexes`, `Female`)
-view(gathered_medianage_estimate_2018)
 
 
 #THIS IS THE 2019 DATASET FOR MEDIAN AGE
@@ -164,7 +156,7 @@ median_age_estimate_2019 <-Census_2019_MedianAgeEstimates_forVA[!(Census_2019_Me
 names(median_age_estimate_2019) <- gsub(" ", ".", names(median_age_estimate_2019))
 #Gathering data by including a sex column
 gathered_medianage_estimate_2019 <- gather(median_age_estimate_2019, key = "Sex", value = "median_age", `Male`,`Both.Sexes`, `Female`)
-view (gathered_medianage_estimate_2019)
+
 
 #THIS IS MERGING ALL THE DATASETS TOGETHER
 merged_medianage_data <- rbind(gathered_medianage_estimate_2011,
@@ -176,5 +168,7 @@ merged_medianage_data <- rbind(gathered_medianage_estimate_2011,
                                gathered_medianage_estimate_2017,
                                gathered_medianage_estimate_2018,
                                gathered_medianage_estimate_2019) %>% 
-  drop_na(county)
-View(merged_medianage_data)
+  filter(Sex == "Both.Sexes" | Sex == "Both.sexes")
+
+# Remove Sex column since we're only using both sexes
+merged_medianage_data$Sex <- NULL
