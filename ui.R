@@ -74,18 +74,23 @@ navbarPage("Housing Trends",
                           selectInput("variable", "Variable:",
                                       c("Occupied Housing Units" = "housing_units",
                                         "Population Estimates" = "pop_estimate",
-                                        "Median Age Estimates" = "median_age"))
-                        ),
+                                        "Median Age Estimates" = "median_age",
+                                        "Education Enrollment" = "enrollment_estimate",
+                                        "Crime Estimates" = "total_violent_pop_crime_estimate")
+                          )
+                        )
+                        ,
                         
                         mainPanel(
                           leafletOutput("theMap", height = 900)
                         )
-                      )
+                    
                     )
+              )
            ),
            
            # Page for something else in the future
            tabPanel("Another Page",
                     fluidRow("This is another page")
                     )
-          )
+)

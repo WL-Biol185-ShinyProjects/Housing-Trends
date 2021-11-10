@@ -4,7 +4,7 @@ library(tidyverse)
 
 source("Data_Prep/population_estimates_cleanup.R")
 source("Data_Prep/DCOHU_data_cleanup.R")
-
+source("Data_Prep/MedianAgeEstimate_cleanup.R")
 allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   # Reset json
   geo <- originalGeo
@@ -51,4 +51,4 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
 
 
 # geo <- readOGR("Data/counties.json")
-# allLeafletMap(geo, 2010, "housing_units")
+# allLeafletMap(geo, 2010, "median_age")

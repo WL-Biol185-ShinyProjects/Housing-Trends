@@ -5,7 +5,7 @@ library(dplyr)
 #THIS IS THE 2011 DATASET FOR MEDIAN AGE
 Census_2011_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2011_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2011_RaceEstimates_forVA$year <- 2011
+Census_2011_MedianAgeEstimates_forVA$year <- 2011
 #Change first column name
 colnames(Census_2011_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -24,7 +24,7 @@ view(gathered_medianage_estimate_2011)
 #THIS IS THE 2012 DATASET FOR MEDIAN AGE
 Census_2012_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2012_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2012_RaceEstimates_forVA$year <- 2012
+Census_2012_MedianAgeEstimates_forVA$year <- 2012
 #Change first column name
 colnames(Census_2012_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -42,7 +42,7 @@ view(gathered_medianage_estimate_2012)
 #THIS IS THE 2013 DATASET FOR MEDIAN AGE
 Census_2013_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2013_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2013_RaceEstimates_forVA$year <- 2013
+Census_2013_MedianAgeEstimates_forVA$year <- 2013
 #Change first column name
 colnames(Census_2013_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -60,7 +60,7 @@ view(gathered_medianage_estimate_2013)
 #THIS IS THE 2014 DATASET FOR MEDIAN AGE
 Census_2014_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2014_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2014_RaceEstimates_forVA$year <- 2014
+Census_2014_MedianAgeEstimates_forVA$year <- 2014
 #Change first column name
 colnames(Census_2014_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -78,7 +78,7 @@ view(gathered_medianage_estimate_2014)
 #THIS IS THE 2015 DATASET FOR MEDIAN AGE
 Census_2015_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2015_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2015_RaceEstimates_forVA$year <- 2015
+Census_2015_MedianAgeEstimates_forVA$year <- 2015
 #Change first column name
 colnames(Census_2015_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -96,7 +96,7 @@ view(gathered_medianage_estimate_2015)
 #THIS IS THE 2016 DATASET FOR MEDIAN AGE
 Census_2016_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2016_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2016_RaceEstimates_forVA$year <- 2016
+Census_2016_MedianAgeEstimates_forVA$year <- 2016
 #Change first column name
 colnames(Census_2016_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -114,7 +114,7 @@ view(gathered_medianage_estimate_2016)
 #THIS IS THE 2017 DATASET FOR MEDIAN AGE
 Census_2017_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2017_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2017_RaceEstimates_forVA$year <- 2017
+Census_2017_MedianAgeEstimates_forVA$year <- 2017
 #Change first column name
 colnames(Census_2017_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -132,7 +132,7 @@ view(gathered_medianage_estimate_2017)
 #THIS IS THE 2018 DATASET FOR MEDIAN AGE
 Census_2018_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2018_MedianAgeEstimates_forVA.csv")
 #add a new column that denotes the year to dataframe
-Census_2018_RaceEstimates_forVA$year <- 2018
+Census_2018_MedianAgeEstimates_forVA$year <- 2018
 #Change first column name
 colnames(Census_2018_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -151,7 +151,7 @@ view(gathered_medianage_estimate_2018)
 #THIS IS THE 2019 DATASET FOR MEDIAN AGE
 Census_2019_MedianAgeEstimates_forVA <- read_csv("Data/MedianAge/Census_2019_MedianAgeEstimates_forVA_0.csv")
 #add a new column that denotes the year to dataframe
-Census_2019_RaceEstimates_forVA$year <- 2019
+Census_2019_MedianAgeEstimates_forVA$year <- 2019
 #Change first column name
 colnames(Census_2019_MedianAgeEstimates_forVA)[1] <- "county"
 #Get the last word - either city or county - and put in its own column
@@ -175,5 +175,6 @@ merged_medianage_data <- rbind(gathered_medianage_estimate_2011,
                                gathered_medianage_estimate_2016,
                                gathered_medianage_estimate_2017,
                                gathered_medianage_estimate_2018,
-                               gathered_medianage_estimate_2019)
+                               gathered_medianage_estimate_2019) %>% 
+  drop_na(county)
 View(merged_medianage_data)

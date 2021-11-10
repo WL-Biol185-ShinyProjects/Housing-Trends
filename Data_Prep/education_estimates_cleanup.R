@@ -28,5 +28,6 @@ local_enrollment$county <- gsub("\\s*\\w*$", "", local_enrollment$county)
 
 #gathering my data
 yearly_local_enrollment <- gather(local_enrollment, key = "year", value = "enrollment_estimate", `2010`:`2019`)
+yearly_local_enrollment$enrollment_estimate <- as.numeric(gsub(",","",yearly_local_enrollment$enrollment_estimate))
 View(yearly_local_enrollment)
 

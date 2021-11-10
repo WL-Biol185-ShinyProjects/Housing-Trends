@@ -118,6 +118,7 @@ yearly_crime_est$LSAD <- word(yearly_crime_est$`Name of Area`, -1)
 #eliminate city/county from the "county" column
 yearly_crime_est$county <- gsub("\\s*\\w*$", "", yearly_crime_est$`Name of Area`)
 yearly_crime_est$`Name of Area` <- NULL
+yearly_crime_est$total_violent_pop_crime_estimate <- as.numeric(yearly_crime_est$total_violent_pop_crime_estimate)
 View(yearly_crime_est)
 
 
