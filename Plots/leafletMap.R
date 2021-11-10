@@ -14,7 +14,7 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   #   filter(year == yearToUse)
 
   # Left join our data into the geo json's data
-  newData  <- lapply(list(pop_est, clean_dcohu), function (x) filter(x, year == yearToUse)) %>%
+  newData  <- lapply(list(pop_est, merged_medianage_data, clean_dcohu), function (x) filter(x, year == yearToUse)) %>%
     reduce(left_join, by = c("county" = "county", 
                              "LSAD" = "LSAD"))
   

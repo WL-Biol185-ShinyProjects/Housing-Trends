@@ -74,7 +74,7 @@ navbarPage("Housing Trends",
                           selectInput("variable", "Variable:",
                                       c("Occupied Housing Units" = "housing_units",
                                         "Population Estimates" = "pop_estimate",
-                                        "something else" = "something else"))
+                                        "Median Age Estimates" = "median_age"))
                         ),
                         
                         mainPanel(
