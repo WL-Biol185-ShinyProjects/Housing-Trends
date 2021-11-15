@@ -208,6 +208,8 @@ merged_race_data <- rbind(gathered_race_estimate_2011,
                           gathered_race_estimate_2017,
                           gathered_race_estimate_2018,
                           gathered_race_estimate_2019)
+merged_race_data <- na.omit(merged_race_data)
 view(merged_race_data)
+
 
 
