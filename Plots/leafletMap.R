@@ -4,6 +4,7 @@ library(tidyverse)
 
 source("Data_Prep/population_estimates_cleanup.R")
 source("Data_Prep/DCOHU_data_cleanup.R")
+source("Data_Prep/MedianAgeEstimate_cleanup.R")
 
 allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   # Reset json
@@ -14,7 +15,7 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   #   filter(year == yearToUse)
 
   # Left join our data into the geo json's data
-  newData  <- lapply(list(pop_est, clean_dcohu), function (x) filter(x, year == yearToUse)) %>%
+  newData  <- lapply(list(merged_medianage_data, pop_est, clean_dcohu), function (x) filter(x, year == yearToUse)) %>%
     reduce(left_join, by = c("county" = "county", 
                              "LSAD" = "LSAD"))
   
@@ -51,4 +52,4 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
 
 
 # geo <- readOGR("Data/counties.json")
-# allLeafletMap(geo, 2010, "housing_units")
+# allLeafletMap(geo, 2011, "median_age")

@@ -1,92 +1,101 @@
 library(shiny)
 library(leaflet)
+library(shinydashboard)
 
-navbarPage("Housing Trends",
-           tabPanel("Race Across Time in VA", 
-                    fluidPage(
-                      # The page title
-                      titlePanel("Race across Time in VA"),
-                      
-                      # A row for this plot that has a sidebar
-                      fluidRow(
-                        column(9,
-                               plotOutput("racePlot")
-                        )
-                      )
-                    )
-                  ),
-           # Page for housing units map
-           # tabPanel("Map", #leafletOutput("theMap", height = 1000)),
-           #          fluidPage(
-           #            
-           #            titlePanel("Number of Occupied Housing Units by Year"),
-           #            
-           #            sidebarLayout(
-           #              
-           #              sidebarPanel(
-           #                sliderInput(
-           #                  "housingYear", label = "Year:", sep="", animate=TRUE,
-           #                  min = 2010, value = 2015, max = 2019,
-           #                )
-           #              ),
-           #              
-           #              mainPanel(
-           #                leafletOutput("housingMap", height = 900)
-           #              )
-           #            )
-           #          )
-           #        ),
-           # Page for population estimates map
-           # tabPanel("Pop Est Map",
-           #          fluidPage(
-           #            
-           #            titlePanel("Population Estimates by Year in VA"),
-           #            
-           #            sidebarLayout(
-           #              
-           #              sidebarPanel(
-           #                sliderInput(
-           #                  "popEstYear", label = "Year:", sep="", animate=TRUE,
-           #                  min = 2010, value = 2015, max = 2019,
-           #                )
-           #              ),
-           #              
-           #              mainPanel(
-           #                leafletOutput("popEstMap", height = 900)
-           #              )
-           #            )
-           #          )
-           # ),
-           
-           # Page for maps with factors
-           tabPanel("Map",
-                    fluidPage(
-                      
-                      titlePanel("Pick a variable to look at"),
-                      
-                      sidebarLayout(
-                        
-                        sidebarPanel(
-                          sliderInput(
-                            "year", label = "Year:", sep="", animate=TRUE,
-                            min = 2010, value = 2015, max = 2019,
-                          ),
-                          selectInput("variable", "Variable:",
-                                      c("Occupied Housing Units" = "housing_units",
-                                        "Population Estimates" = "pop_estimate",
-                                        "Education Enrollment" = "enrollment_estimate",
-                                        "Crime Estimates" = "total_violent_pop_crime_estimate"))
-                        ),
-                        
-                        mainPanel(
-                          leafletOutput("theMap", height = 900)
-                        )
-                      )
-                    )
-           ),
-           
-           # Page for something else in the future
-           tabPanel("Another Page",
-                    fluidRow("This is another page")
-                    )
-          )
+dashboardPage(
+  dashboardHeader(title="Housing in VA"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Main Map", tabName = "maps", icon = icon("map")),
+      menuItem("Race across Time in VA", tabName = "race_in_va", icon = icon("clock"))
+    )
+  ),
+  dashboardBody(
+    tabItems(
+      # All Maps
+      tabItem(tabName="maps",
+              fluidRow(
+                box(status = "primary", leafletOutput("theMap", height = 900)),
+                
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  sliderInput(
+                    "year", label = "Year:", sep="", animate=TRUE,
+                    min = 2010, value = 2015, max = 2019,
+                   ),
+                  selectInput("variable", "Variable:",
+                              c("Occupied Housing Units" = "housing_units",
+                                "Population Estimates" = "pop_estimate",
+                                "Median Age Estimates" = "median_age",
+                                "Education Enrollment" = "enrollment_estimate",
+                                "Crime Estimates" = "total_violent_pop_crime_estimate")
+                              )
+                  )
+                )
+              ),
+      # Bar plot of Race Across Time
+      tabItem(tabName="race_in_va",
+              h2("Race Across Time in Virginia"),
+              fluidRow(
+                box(status = "primary", width = 12, plotOutput("racePlot"))
+              )
+      )
+    )
+    
+  )
+)
+
+
+
+
+# navbarPage("Housing Trends",
+#            tabPanel("Race Across Time in VA", 
+#                     fluidPage(
+#                       # The page title
+#                       titlePanel("Race across Time in VA"),
+#                       
+#                       # A row for this plot that has a sidebar
+#                       fluidRow(
+#                         column(9,
+#                                plotOutput("racePlot")
+#                         )
+#                       )
+#                     )
+#                   ),
+#            # Page for maps with factors
+#            tabPanel("Map",
+#                     fluidPage(
+#                       
+#                       titlePanel("Pick a variable to look at"),
+#                       
+#                       sidebarLayout(
+#                         
+#                         sidebarPanel(
+#                           sliderInput(
+#                             "year", label = "Year:", sep="", animate=TRUE,
+#                             min = 2010, value = 2015, max = 2019,
+#                           ),
+#                           selectInput("variable", "Variable:",
+#                                       c("Occupied Housing Units" = "housing_units",
+#                                         "Population Estimates" = "pop_estimate",
+#                                         "Median Age Estimates" = "median_age",
+#                                         "Education Enrollment" = "enrollment_estimate",
+#                                         "Crime Estimates" = "total_violent_pop_crime_estimate")
+#                           )
+#                         )
+#                         ,
+#                         
+#                         mainPanel(
+#                           leafletOutput("theMap", height = 900)
+#                         )
+#                     
+#                     )
+#               )
+#            ),
+#            
+#            # Page for something else in the future
+#            tabPanel("Another Page",
+#                     fluidRow("This is another page")
+#                     )
+# )
