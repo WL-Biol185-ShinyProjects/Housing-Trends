@@ -38,7 +38,17 @@ dashboardPage(
       tabItem(tabName="race_in_va",
               h2("Race Across Time in Virginia"),
               fluidRow(
-                box(status = "primary", width = 12, plotOutput("racePlot"))
+                box(status = "primary", width = 12, plotOutput("racePlot")),
+                h2("Race Across Time per County"),
+                fluidRow(
+                  box(status = "primary", width = 8, plotOutput("racePlotII")),
+                  box(
+                    title = "Controls",
+                    status = "warning",
+                    width = 4,
+                    selectInput("county", "County", choices = unique(merged_race_data$county))
+                  )
+                )
               )
       )
     )
