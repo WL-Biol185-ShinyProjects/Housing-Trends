@@ -9,7 +9,8 @@ dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
-      menuItem("Race across Time in VA", tabName = "race_in_va", icon = icon("clock"))
+      menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
+      menuItem("Income, Education, and Voting Patterns", tabName = "IncomePerCapita", icon = icon("money"))
     )
   ),
   dashboardBody(
@@ -17,12 +18,11 @@ dashboardPage(
       # All Maps
       tabItem(tabName="maps",
               fluidRow(
-                box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
+                box(status = "primary", leafletOutput("theMap", height = 900, width= 900)),
                 
                 box(
                   title = "Controls",
                   status = "warning",
-                  width = 4,
                   sliderInput(
                     "year", label = "Year:", sep="", animate=TRUE,
                     min = 2010, value = 2015, max = 2019,
@@ -39,17 +39,18 @@ dashboardPage(
               ),
       # Bar plot of Race Across Time
       tabItem(tabName="race_in_va",
+              h2("Race Across Time in Virginia"),
               fluidRow(
-                h2("Race Across Time in Virginia"),
                 box(status = "primary", width = 12, plotOutput("racePlot")),
                 h2("Race Across Time per County"),
-                box(status = "primary", width = 8, plotOutput("racePlotII")),
-                box(
-                  title = "Controls",
-                  status = "warning",
-                  width = 4,
-                  selectInput("county", "County", choices = unique(merged_race_data$county))
-          
+                fluidRow(
+                  box(status = "primary", width = 8, plotOutput("racePlotII")),
+                  box(
+                    title = "Controls",
+                    status = "warning",
+                    width = 4,
+                    selectInput("county", "County", choices = unique(merged_race_data$county))
+                  )
                 )
               )
       )
