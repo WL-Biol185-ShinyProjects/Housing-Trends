@@ -10,7 +10,7 @@ dashboardPage(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
-      menuItem("Income, Education, and Voting Patterns", tabName = "IncomePerCapita", icon = icon("money"), width = 6)
+      menuItem("Income, Education, and Voting Patterns", tabName = "IncomePerCapita", icon = icon("money"))
     )
   ),
   dashboardBody(
