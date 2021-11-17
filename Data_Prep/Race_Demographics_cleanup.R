@@ -209,6 +209,4 @@ merged_race_data <- rbind(gathered_race_estimate_2011,
                           gathered_race_estimate_2017,
                           gathered_race_estimate_2018,
                           gathered_race_estimate_2019)
-view(merged_race_data)
-
 

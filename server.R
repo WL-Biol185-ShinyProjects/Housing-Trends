@@ -7,7 +7,7 @@ source("Plots/racePlot.R")
 # source("Plots/housingLeafletMap.R")
 # source("Plots/popEstLeafletMap.R")
 source("Plots/leafletMap.R")
-source("Plots/racePlotsII.R")
+source("Plots/racePlotII.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")

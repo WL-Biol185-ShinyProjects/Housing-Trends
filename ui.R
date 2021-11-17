@@ -2,6 +2,8 @@ library(shiny)
 library(leaflet)
 library(shinydashboard)
 
+source("Data_Prep/Race_Demographics_cleanup.R")
+
 dashboardPage(
   dashboardHeader(title="Housing Trends in Virginia"),
   dashboardSidebar(
