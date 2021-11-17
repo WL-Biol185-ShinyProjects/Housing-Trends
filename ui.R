@@ -3,7 +3,7 @@ library(leaflet)
 library(shinydashboard)
 
 dashboardPage(
-  dashboardHeader(title="Housing in VA"),
+  dashboardHeader(title="Housing Trends in Virginia"),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
