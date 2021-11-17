@@ -9,7 +9,8 @@ dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
-      menuItem("Race across Time in VA", tabName = "race_in_va", icon = icon("clock"))
+      menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
+      menuItem("Income, Education, and Voting Patterns", tabName = "IncomePerCapita", icon = icon("money"), width = 6)
     )
   ),
   dashboardBody(
@@ -17,7 +18,7 @@ dashboardPage(
       # All Maps
       tabItem(tabName="maps",
               fluidRow(
-                box(status = "primary", leafletOutput("theMap", height = 900)),
+                box(status = "primary", leafletOutput("theMap", height = 900, width= 900)),
                 
                 box(
                   title = "Controls",
