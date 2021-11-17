@@ -174,7 +174,7 @@ gathered_race_estimates_2018 <- gather(Census_2018_RaceEstimates_forVA, key = "R
 #Get the last word - either city or county - and put in its own column
 gathered_race_estimates_2018$LSAD <- word(gathered_race_estimates_2018$county, -1)
 #Remove the LSAD since it has its own column
-gathered_race_estimates_2018$County <- gsub("\\s*\\w*$", "", gathered_race_estimates_2018$county)
+gathered_race_estimates_2018$county <- gsub("\\s*\\w*$", "", gathered_race_estimates_2018$county)
 #Remove the word Virginia from LSAD column
 gathered_race_estimate_2018 <- gathered_race_estimates_2018[!(gathered_race_estimates_2018$LSAD =="Virginia"),]
 
@@ -209,6 +209,4 @@ merged_race_data <- rbind(gathered_race_estimate_2011,
                           gathered_race_estimate_2017,
                           gathered_race_estimate_2018,
                           gathered_race_estimate_2019)
-view(merged_race_data)
-
 
