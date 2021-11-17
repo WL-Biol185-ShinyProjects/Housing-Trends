@@ -7,7 +7,7 @@ library(leaflet)
 library(rgdal)
 
 #importing population data
-tidy_pop_data <- read_excel("~/Housing-Trends/Data/Population Estimates/co-est2019-annres-51 (2).xlsx", 
+tidy_pop_data <- read_excel("Data/Population Estimates/co-est2019-annres-51 (2).xlsx", 
                            skip = 3)
 
 # Remove unnecessary columns
