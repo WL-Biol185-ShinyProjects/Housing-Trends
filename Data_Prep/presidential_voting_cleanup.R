@@ -11,11 +11,7 @@ countypres_2000_2020 <- read_csv("Data/countypres_2000-2020.csv",
   rename("county" = "county_name") %>%
   filter(state_po == "VA", year == 2010:2020)
 
-#Filter for Virginia
-VAcountypres_2000_2020 <- countypres_2000_2020 %>% 
-  filter(state_po=="VA", year== 2010:2020) 
-
-VAcountypres_2000_2020$state_po <- NULL
+countypres_2000_2020$state_po <- NULL
 
 #Eliminating the pattern of city
 grepl (" CITY",VAcountypres_2000_2020$county)
