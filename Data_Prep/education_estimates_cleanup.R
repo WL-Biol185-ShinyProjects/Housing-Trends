@@ -4,8 +4,8 @@ library(rgdal)
 #enrollment to postsecondary education
 
 #renaming variables
-early_local_enrollment <- read.csv("~/Housing-Trends/Data/loc_enroll.csv")
-late_local_enrollment <- read.csv("~/Housing-Trends/Data/loc_enroll2.csv")
+early_local_enrollment <- read.csv("Data/loc_enroll.csv")
+late_local_enrollment <- read.csv("Data/loc_enroll2.csv")
 
 #joindata 
 local_enrollment <- left_join(early_local_enrollment, late_local_enrollment, by = "Locality", c="year")
