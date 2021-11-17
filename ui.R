@@ -17,11 +17,12 @@ dashboardPage(
       # All Maps
       tabItem(tabName="maps",
               fluidRow(
-                box(status = "primary", leafletOutput("theMap", height = 900)),
+                box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
                 
                 box(
                   title = "Controls",
                   status = "warning",
+                  width = 4,
                   sliderInput(
                     "year", label = "Year:", sep="", animate=TRUE,
                     min = 2010, value = 2015, max = 2019,
