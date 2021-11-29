@@ -15,8 +15,10 @@ dashboardPage(
       menuItem("Education Patterns", tabName = "education_in_va"), 
       menuItem("Voting Patterns", tabName = "voting_in_va")
     )
-  ),
-  dashboardBody(
+  ),)
+  dashboardBody((
+    MainPanel(
+      h4("This app explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia, USA. Factors such as race, education, income, voting, homelessness, etc are displayed over time in all the counties in Virginia.")),
     tabItems(
       # All Maps
       tabItem(tabName="maps",
