@@ -6,7 +6,7 @@ library(shinydashboard)
 source("Data_Prep/Race_Demographics_cleanup.R")
 
 dashboardPage(
-  dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 530), skin = "green",
+  dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 600), skin = "green",
   dashboardSidebar(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
