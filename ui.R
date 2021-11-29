@@ -56,6 +56,23 @@ dashboardPage(
           
                 )
               )
+      ),
+      # Election Map
+      tabItem(tabName="voting_in_va",
+              fluidRow(
+                h2("Election Results in VA from 2012 - 2016"),
+                box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
+                
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  width = 4,
+                  sliderInput(
+                    "electionYear", label = "Year:", sep="", animate=TRUE,
+                    min = 2000, value = 2016, max = 2016, step = 4
+                  )
+                )
+              )
       )
     )
     
