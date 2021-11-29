@@ -2,15 +2,18 @@ library(shiny)
 library(leaflet)
 library(shinydashboard)
 
+#Source data here
 source("Data_Prep/Race_Demographics_cleanup.R")
 
 dashboardPage(
-  dashboardHeader(title="Housing Trends in Virginia"),
+  dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 530), skin = "green",
   dashboardSidebar(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
-      menuItem("Income, Education, and Voting Patterns", tabName = "IncomePerCapita", icon = icon("money"))
+      menuItem("Income and Race", tabName = "incomepercaptica_in_va", icon = icon("money")),
+      menuItem("Education Patterns", tabName = "education_in_va"), 
+      menuItem("Voting Patterns", tabName = "voting_in_va")
     )
   ),
   dashboardBody(
