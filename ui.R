@@ -6,7 +6,7 @@ library(shinydashboard)
 source("Data_Prep/Race_Demographics_cleanup.R")
 
 dashboardPage(
-  dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 530), skin = "green",
+  dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 600), skin = "green",
   dashboardSidebar(
     sidebarMenu(
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
@@ -21,7 +21,8 @@ dashboardPage(
       # All Maps
       tabItem(tabName="maps",
               fluidRow(
-                box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
+                h3("This app explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia, USA. Factors such as race, education, income, voting, homelessness, etc are displayed over time in all the counties of Virginia")
+                ,img(src = "housingpic.jpg", height = 500, width = 750), box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
                 
                 box(
                   title = "Controls",
@@ -44,9 +45,9 @@ dashboardPage(
       # Bar plot of Race Across Time
       tabItem(tabName="race_in_va",
               fluidRow(
-                h2("Race Across Time in Virginia"),
+                h2("Changes in Race Statistics in Virginia"),
                 box(status = "primary", width = 12, plotOutput("racePlot")),
-                h2("Race Across Time per County"),
+                h2("Changes in Race Statistics per County"),
                 box(status = "primary", width = 8, plotOutput("racePlotII")),
                 box(
                   title = "Controls",
