@@ -26,7 +26,8 @@ dashboardPage(
       #Home Page
       tabItem(tabName="home",
               fluidRow(
-                HTML("          
+                HTML("
+                                     
                      <div class='banner'>
                       <h2 class='main-title'>HOUSING TRENDS PROJECT</h2>
                       <p class='main-description'>Insight into factors affecting housing in VA.</p>
@@ -126,30 +127,11 @@ dashboardPage(
                      ")
               ),
               fluidRow(
-                h2(class="title", icon("users"), "The Team")
+                h2(class="title", "The Team")
               ),
-              fluidRow(class="cards-container",
-                column(6, class="cards",
-                       HTML("
-                     <div class='card'>
-                      <img src='images/Betelihim.jpg' alt='Avatar' style='width:100%'>
-                      <div class='container'>
-                        <h4 class='name'><b>Betelihim Haile</b></h4>
-                        <p class='year'>Class of 2022</p>
-                        <p><b>Major: </b>Neuroscience</p>
-                      </div>
-                    </div>
-                     "),
-                       HTML("
-                     <div class='card'>
-                      <img src='images/Carolina.jpg' alt='Avatar' style='width:100%'>
-                      <div class='container'>
-                        <h4 class='name'><b>Carolina Rubio Regalado</b></h4>
-                        <p class='year'>Class of 2022</p>
-                        <p><b>Major: </b>Sociology &amp; Anthropology</p>
-                      </div>
-                    </div>
-                     "),
+              fluidRow(
+                column(3),
+                column(2,
                        HTML("
                      <div class='card'>
                       <img src='images/Yoseph.jpg' alt='Avatar' style='width:100%'>
@@ -159,10 +141,30 @@ dashboardPage(
                         <p><b>Major: </b>Computer Science</p>
                       </div>
                     </div>
-                     ")))
-              ,
-              fluidRow(
-                h2(class="title", icon("table"), "The Data")
+                     ")),
+                column(2,
+                       HTML("
+                     <div class='card'>
+                      <img src='images/Carolina.jpg' alt='Avatar' style='width:100%'>
+                      <div class='container'>
+                        <h4 class='name'><b>Carolina Rubio Regalado</b></h4>
+                        <p class='year'>Class of 2022</p>
+                        <p><b>Major: </b>Sociology &amp; Anthropology</p>
+                      </div>
+                    </div>
+                     ")),
+                column(2,
+                       HTML("
+                     <div class='card'>
+                      <img src='images/Betelihim.jpg' alt='Avatar' style='width:100%'>
+                      <div class='container'>
+                        <h4 class='name'><b>Betelihim Haile</b></h4>
+                        <p class='year'>Class of 2022</p>
+                        <p><b>Major: </b>Neuroscience</p>
+                      </div>
+                    </div>
+                     ")),
+                column(3)
               )
               
       )
