@@ -9,15 +9,40 @@ dashboardPage(
   dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 600), skin = "green",
   dashboardSidebar(
     sidebarMenu(
+      menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
       menuItem("Income and Race", tabName = "incomepercaptica_in_va", icon = icon("money")),
       menuItem("Education Patterns", tabName = "education_in_va"), 
-      menuItem("Voting Patterns", tabName = "voting_in_va")
+      menuItem("Voting Patterns", tabName = "voting_in_va"),
+      menuItem("About", tabName = "about", icon = icon("info-circle"))
     )
   ),
   dashboardBody(
+    tags$head(
+      tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
+    ),
     tabItems(
+      #Home Page
+      tabItem(tabName="home",
+              fluidRow(
+                HTML("
+                                     
+                     <div class='banner'>
+                      <h2 class='main-title'>HOUSING TRENDS PROJECT</h2>
+                      <p class='main-description'>Insight into factors affecting housing in VA.</p>
+                     </div>
+                     ")
+              ),
+              fluidRow(
+                HTML("
+                     <section>
+                      <h2 class='title'>What you'll find here</h2>
+                      <p class='description'>An interactive tool that helps you explore how housing-related factors change over time in Virginia. You can find information about crime, race demographics, election data, as well as education and see how they affect housing in Virginia's counties.</p>
+                     </section>
+                     ")
+              )
+              ),
       # All Maps
       tabItem(tabName="maps",
               fluidRow(
@@ -57,6 +82,75 @@ dashboardPage(
           
                 )
               )
+      ),
+      # Election Map
+      tabItem(tabName="voting_in_va",
+              fluidRow(
+                h2("Election Results in VA from 2012 - 2016"),
+                box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
+                
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  width = 4,
+                  sliderInput(
+                    "electionYear", label = "Year:", sep="", animate=TRUE,
+                    min = 2000, value = 2016, max = 2016, step = 4
+                  )
+                )
+              )
+      ),
+      # About Page
+      #Home Page
+      tabItem(tabName="about",
+              fluidRow(
+                HTML("           
+                     <div class='mini-banner'>
+                      <h2 class=''>ABOUT THIS PROJECT</h2>
+                     </div>
+                     ")
+              ),
+              fluidRow(
+                h2(class="title", "The Team")
+              ),
+              fluidRow(
+                column(3),
+                column(2,
+                       HTML("
+                     <div class='card'>
+                      <img src='images/Yoseph.jpg' alt='Avatar' style='width:100%'>
+                      <div class='container'>
+                        <h4 class='name'><b>Yoseph Tamene</b></h4>
+                        <p class='year'>Class of 2022</p>
+                        <p><b>Major: </b>Computer Science</p>
+                      </div>
+                    </div>
+                     ")),
+                column(2,
+                       HTML("
+                     <div class='card'>
+                      <img src='images/Carolina.jpg' alt='Avatar' style='width:100%'>
+                      <div class='container'>
+                        <h4 class='name'><b>Carolina Rubio Regalado</b></h4>
+                        <p class='year'>Class of 2022</p>
+                        <p><b>Major: </b>Sociology &amp; Anthropology</p>
+                      </div>
+                    </div>
+                     ")),
+                column(2,
+                       HTML("
+                     <div class='card'>
+                      <img src='images/Betelihim.jpg' alt='Avatar' style='width:100%'>
+                      <div class='container'>
+                        <h4 class='name'><b>Betelihim Haile</b></h4>
+                        <p class='year'>Class of 2022</p>
+                        <p><b>Major: </b>Neuroscience</p>
+                      </div>
+                    </div>
+                     ")),
+                column(3)
+              )
+              
       )
     )
     

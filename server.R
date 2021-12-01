@@ -8,6 +8,7 @@ source("Plots/racePlot.R")
 # source("Plots/popEstLeafletMap.R")
 source("Plots/leafletMap.R")
 source("Plots/racePlotII.R")
+source("Plots/electionMap.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
@@ -22,6 +23,9 @@ function (input, output) {
   
   # Rendering the population estimates map
   # output$popEstMap <- renderLeaflet({popEstLeafletMap(geo, input$popEstYear)})
+  
+  # Rendering the Election map
+  output$electionMap <- renderLeaflet({electionMap(geo, input$electionYear)})
   
   # Rendering the all data on the same map
   output$theMap <- renderLeaflet({allLeafletMap(geo, input$year, input$variable)})
