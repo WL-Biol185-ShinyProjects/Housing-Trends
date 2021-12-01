@@ -12,7 +12,7 @@ dashboardPage(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
-      menuItem("Income and Race", tabName = "incomepercaptica_in_va", icon = icon("money")),
+      menuItem("Income and Race", tabName = "incomepercapita_in_va", icon = icon("money")),
       menuItem("Education Patterns", tabName = "education_in_va"), 
       menuItem("Voting Patterns", tabName = "voting_in_va"),
       menuItem("About", tabName = "about", icon = icon("info-circle"))
@@ -87,6 +87,12 @@ dashboardPage(
                 )
               )
       ),
+      # Income Graphs
+      tabItem(tabName ="incomepercapita_in_va",
+              fluidRow(
+                h2("Income Per Capita in VA"),
+                box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
+      )),
       # Election Map
       tabItem(tabName="voting_in_va",
               fluidRow(
@@ -159,6 +165,7 @@ dashboardPage(
     
   )
 )
+
 
 
 

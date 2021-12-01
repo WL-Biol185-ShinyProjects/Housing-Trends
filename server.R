@@ -9,6 +9,7 @@ source("Plots/racePlot.R")
 source("Plots/leafletMap.R")
 source("Plots/racePlotII.R")
 source("Plots/electionMap.R")
+source("Plots/IncomePerCapita.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
@@ -17,6 +18,9 @@ function (input, output) {
   # Rendering the bar plot
   output$racePlot <- renderPlot({racePlot})
   output$racePlotII <- renderPlot({racePlotII(input$county)})
+  
+  #Rendering the income plot
+  output$IncomePerCapita <- renderPlot({Income_Per_Capita_Plot})
   
   # Rendering the occupied housing units map
   # output$housingMap <- renderLeaflet({housingLeafletMap(geo, input$housingYear)})
