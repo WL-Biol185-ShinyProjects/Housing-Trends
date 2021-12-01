@@ -1,0 +1,136 @@
+Geo_FIPS,Geo_NAME,Geo_QNAME,Geo_NATION,Geo_STATE,Geo_COUNTY,Geo_CT,Geo_CITIES,Geo_TCD,Geo_PROJECTS,Geo_CBSA,Geo_PHA,ALL_HUD_A001_001
+"51001","Accomack County","Accomack County, Virginia","00","51","001",,,,,,,773
+"51003","Albemarle County","Albemarle County, Virginia","00","51","003",,,,,,,1111
+"51005","Alleghany County","Alleghany County, Virginia","00","51","005",,,,,,,628
+"51007","Amelia County","Amelia County, Virginia","00","51","007",,,,,,,
+"51009","Amherst County","Amherst County, Virginia","00","51","009",,,,,,,150
+"51011","Appomattox County","Appomattox County, Virginia","00","51","011",,,,,,,204
+"51013","Arlington County","Arlington County, Virginia","00","51","013",,,,,,,4073
+"51015","Augusta County","Augusta County, Virginia","00","51","015",,,,,,,337
+"51017","Bath County","Bath County, Virginia","00","51","017",,,,,,,
+"51019","Bedford County","Bedford County, Virginia","00","51","019",,,,,,,612
+"51021","Bland County","Bland County, Virginia","00","51","021",,,,,,,
+"51023","Botetourt County","Botetourt County, Virginia","00","51","023",,,,,,,
+"51025","Brunswick County","Brunswick County, Virginia","00","51","025",,,,,,,182
+"51027","Buchanan County","Buchanan County, Virginia","00","51","027",,,,,,,248
+"51029","Buckingham County","Buckingham County, Virginia","00","51","029",,,,,,,121
+"51031","Campbell County","Campbell County, Virginia","00","51","031",,,,,,,261
+"51033","Caroline County","Caroline County, Virginia","00","51","033",,,,,,,75
+"51035","Carroll County","Carroll County, Virginia","00","51","035",,,,,,,442
+"51036","Charles City County","Charles City County, Virginia","00","51","036",,,,,,,
+"51037","Charlotte County","Charlotte County, Virginia","00","51","037",,,,,,,
+"51041","Chesterfield County","Chesterfield County, Virginia","00","51","041",,,,,,,3386
+"51043","Clarke County","Clarke County, Virginia","00","51","043",,,,,,,61
+"51045","Craig County","Craig County, Virginia","00","51","045",,,,,,,63
+"51047","Culpeper County","Culpeper County, Virginia","00","51","047",,,,,,,699
+"51049","Cumberland County","Cumberland County, Virginia","00","51","049",,,,,,,
+"51051","Dickenson County","Dickenson County, Virginia","00","51","051",,,,,,,592
+"51053","Dinwiddie County","Dinwiddie County, Virginia","00","51","053",,,,,,,268
+"51057","Essex County","Essex County, Virginia","00","51","057",,,,,,,198
+"51059","Fairfax County","Fairfax County, Virginia","00","51","059",,,,,,,19361
+"51061","Fauquier County","Fauquier County, Virginia","00","51","061",,,,,,,428
+"51063","Floyd County","Floyd County, Virginia","00","51","063",,,,,,,46
+"51065","Fluvanna County","Fluvanna County, Virginia","00","51","065",,,,,,,197
+"51067","Franklin County","Franklin County, Virginia","00","51","067",,,,,,,529
+"51069","Frederick County","Frederick County, Virginia","00","51","069",,,,,,,192
+"51071","Giles County","Giles County, Virginia","00","51","071",,,,,,,301
+"51073","Gloucester County","Gloucester County, Virginia","00","51","073",,,,,,,245
+"51075","Goochland County","Goochland County, Virginia","00","51","075",,,,,,,66
+"51077","Grayson County","Grayson County, Virginia","00","51","077",,,,,,,268
+"51079","Greene County","Greene County, Virginia","00","51","079",,,,,,,322
+"51081","Greensville County","Greensville County, Virginia","00","51","081",,,,,,,131
+"51083","Halifax County","Halifax County, Virginia","00","51","083",,,,,,,429
+"51085","Hanover County","Hanover County, Virginia","00","51","085",,,,,,,824
+"51087","Henrico County","Henrico County, Virginia","00","51","087",,,,,,,9394
+"51089","Henry County","Henry County, Virginia","00","51","089",,,,,,,404
+"51091","Highland County","Highland County, Virginia","00","51","091",,,,,,,
+"51093","Isle of Wight County","Isle of Wight County, Virginia","00","51","093",,,,,,,733
+"51095","James City County","James City County, Virginia","00","51","095",,,,,,,387
+"51097","King and Queen County","King and Queen County, Virginia","00","51","097",,,,,,,
+"51099","King George County","King George County, Virginia","00","51","099",,,,,,,27
+"51101","King William County","King William County, Virginia","00","51","101",,,,,,,95
+"51103","Lancaster County","Lancaster County, Virginia","00","51","103",,,,,,,335
+"51105","Lee County","Lee County, Virginia","00","51","105",,,,,,,1209
+"51107","Loudoun County","Loudoun County, Virginia","00","51","107",,,,,,,1585
+"51109","Louisa County","Louisa County, Virginia","00","51","109",,,,,,,250
+"51111","Lunenburg County","Lunenburg County, Virginia","00","51","111",,,,,,,
+"51113","Madison County","Madison County, Virginia","00","51","113",,,,,,,62
+"51115","Mathews County","Mathews County, Virginia","00","51","115",,,,,,,26
+"51117","Mecklenburg County","Mecklenburg County, Virginia","00","51","117",,,,,,,150
+"51119","Middlesex County","Middlesex County, Virginia","00","51","119",,,,,,,46
+"51121","Montgomery County","Montgomery County, Virginia","00","51","121",,,,,,,1517
+"51125","Nelson County","Nelson County, Virginia","00","51","125",,,,,,,114
+"51127","New Kent County","New Kent County, Virginia","00","51","127",,,,,,,
+"51131","Northampton County","Northampton County, Virginia","00","51","131",,,,,,,660
+"51133","Northumberland County","Northumberland County, Virginia","00","51","133",,,,,,,128
+"51135","Nottoway County","Nottoway County, Virginia","00","51","135",,,,,,,26
+"51137","Orange County","Orange County, Virginia","00","51","137",,,,,,,281
+"51139","Page County","Page County, Virginia","00","51","139",,,,,,,52
+"51141","Patrick County","Patrick County, Virginia","00","51","141",,,,,,,91
+"51143","Pittsylvania County","Pittsylvania County, Virginia","00","51","143",,,,,,,620
+"51145","Powhatan County","Powhatan County, Virginia","00","51","145",,,,,,,18
+"51147","Prince Edward County","Prince Edward County, Virginia","00","51","147",,,,,,,317
+"51149","Prince George County","Prince George County, Virginia","00","51","149",,,,,,,475
+"51153","Prince William County","Prince William County, Virginia","00","51","153",,,,,,,6272
+"51155","Pulaski County","Pulaski County, Virginia","00","51","155",,,,,,,1274
+"51157","Rappahannock County","Rappahannock County, Virginia","00","51","157",,,,,,,
+"51159","Richmond County","Richmond County, Virginia","00","51","159",,,,,,,
+"51161","Roanoke County","Roanoke County, Virginia","00","51","161",,,,,,,1291
+"51163","Rockbridge County","Rockbridge County, Virginia","00","51","163",,,,,,,368
+"51165","Rockingham County","Rockingham County, Virginia","00","51","165",,,,,,,375
+"51167","Russell County","Russell County, Virginia","00","51","167",,,,,,,360
+"51169","Scott County","Scott County, Virginia","00","51","169",,,,,,,557
+"51171","Shenandoah County","Shenandoah County, Virginia","00","51","171",,,,,,,491
+"51173","Smyth County","Smyth County, Virginia","00","51","173",,,,,,,1083
+"51175","Southampton County","Southampton County, Virginia","00","51","175",,,,,,,109
+"51177","Spotsylvania County","Spotsylvania County, Virginia","00","51","177",,,,,,,1971
+"51179","Stafford County","Stafford County, Virginia","00","51","179",,,,,,,1361
+"51181","Surry County","Surry County, Virginia","00","51","181",,,,,,,36
+"51183","Sussex County","Sussex County, Virginia","00","51","183",,,,,,,384
+"51185","Tazewell County","Tazewell County, Virginia","00","51","185",,,,,,,901
+"51187","Warren County","Warren County, Virginia","00","51","187",,,,,,,367
+"51191","Washington County","Washington County, Virginia","00","51","191",,,,,,,633
+"51193","Westmoreland County","Westmoreland County, Virginia","00","51","193",,,,,,,417
+"51195","Wise County","Wise County, Virginia","00","51","195",,,,,,,2773
+"51197","Wythe County","Wythe County, Virginia","00","51","197",,,,,,,830
+"51199","York County","York County, Virginia","00","51","199",,,,,,,524
+"51510","Alexandria city","Alexandria city, Virginia","00","51","510",,,,,,,7079
+"51515","Bedford city","Bedford city, Virginia","00","51","515",,,,,,,
+"51520","Bristol city","Bristol city, Virginia","00","51","520",,,,,,,1766
+"51530","Buena Vista city","Buena Vista city, Virginia","00","51","530",,,,,,,242
+"51540","Charlottesville city","Charlottesville city, Virginia","00","51","540",,,,,,,2507
+"51550","Chesapeake city","Chesapeake city, Virginia","00","51","550",,,,,,,6618
+"51570","Colonial Heights city","Colonial Heights city, Virginia","00","51","570",,,,,,,897
+"51580","Covington city","Covington city, Virginia","00","51","580",,,,,,,60
+"51590","Danville city","Danville city, Virginia","00","51","590",,,,,,,4779
+"51595","Emporia city","Emporia city, Virginia","00","51","595",,,,,,,379
+"51600","Fairfax city","Fairfax city, Virginia","00","51","600",,,,,,,195
+"51610","Falls Church city","Falls Church city, Virginia","00","51","610",,,,,,,125
+"51620","Franklin city","Franklin city, Virginia","00","51","620",,,,,,,1179
+"51630","Fredericksburg city","Fredericksburg city, Virginia","00","51","630",,,,,,,1625
+"51640","Galax city","Galax city, Virginia","00","51","640",,,,,,,622
+"51650","Hampton city","Hampton city, Virginia","00","51","650",,,,,,,8648
+"51660","Harrisonburg city","Harrisonburg city, Virginia","00","51","660",,,,,,,2242
+"51670","Hopewell city","Hopewell city, Virginia","00","51","670",,,,,,,2089
+"51678","Lexington city","Lexington city, Virginia","00","51","678",,,,,,,190
+"51680","Lynchburg city","Lynchburg city, Virginia","00","51","680",,,,,,,4608
+"51683","Manassas city","Manassas city, Virginia","00","51","683",,,,,,,495
+"51685","Manassas Park city","Manassas Park city, Virginia","00","51","685",,,,,,,273
+"51690","Martinsville city","Martinsville city, Virginia","00","51","690",,,,,,,935
+"51700","Newport News city","Newport News city, Virginia","00","51","700",,,,,,,12815
+"51710","Norfolk city","Norfolk city, Virginia","00","51","710",,,,,,,17389
+"51720","Norton city","Norton city, Virginia","00","51","720",,,,,,,590
+"51730","Petersburg city","Petersburg city, Virginia","00","51","730",,,,,,,3052
+"51735","Poquoson city","Poquoson city, Virginia","00","51","735",,,,,,,
+"51740","Portsmouth city","Portsmouth city, Virginia","00","51","740",,,,,,,7643
+"51750","Radford city","Radford city, Virginia","00","51","750",,,,,,,739
+"51760","Richmond city","Richmond city, Virginia","00","51","760",,,,,,,19780
+"51770","Roanoke city","Roanoke city, Virginia","00","51","770",,,,,,,8853
+"51775","Salem city","Salem city, Virginia","00","51","775",,,,,,,297
+"51790","Staunton city","Staunton city, Virginia","00","51","790",,,,,,,1094
+"51800","Suffolk city","Suffolk city, Virginia","00","51","800",,,,,,,3732
+"51810","Virginia Beach city","Virginia Beach city, Virginia","00","51","810",,,,,,,8255
+"51820","Waynesboro city","Waynesboro city, Virginia","00","51","820",,,,,,,1340
+"51830","Williamsburg city","Williamsburg city, Virginia","00","51","830",,,,,,,296
+"51840","Winchester city","Winchester city, Virginia","00","51","840",,,,,,,519
+"51XXX","Missing","Missing, Virginia","00","51","XXX",,,,,,,304
