@@ -46,8 +46,8 @@ dashboardPage(
       # All Maps
       tabItem(tabName="maps",
               fluidRow(
-                h3("This app explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia, USA. Factors such as race, education, income, voting, homelessness, etc are displayed over time in all the counties of Virginia")
-                ,img(src = "housingpic.jpg", height = 500, width = 750), box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
+                h3("This map explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia, USA. ")
+                , box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
                 
                 box(
                   title = "Controls",
