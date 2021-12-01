@@ -50,6 +50,11 @@ dashboardPage(
                     p(class="plot-description", "This map explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia. Factors such as race, education, income, voting, homelessness, etc are displayed over time in the counties.")
                     )
               ),
+              # Value boxes showing data by year
+              fluidRow(
+                valueBoxOutput("perCapitaIncomeBox")
+              ),
+              # Main Map
               fluidRow(
                 box(status = "primary", width = 8, leafletOutput("theMap", height = 900)),
                 

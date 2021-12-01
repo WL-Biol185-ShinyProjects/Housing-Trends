@@ -33,4 +33,12 @@ function (input, output) {
   
   # Rendering the all data on the same map
   output$theMap <- renderLeaflet({allLeafletMap(geo, input$year, input$variable)})
+  
+  # Rendering Value Box showing Per Capita Income in the given year
+  output$perCapitaIncomeBox <- renderValueBox({
+    valueBox(
+      perCapitaByYear(input$year), paste("Per Capita Income in ", input$year), icon = icon("money-bill-wave"),
+      color = "green"
+    )
+  })
 }

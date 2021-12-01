@@ -8,3 +8,6 @@ Income_Per_Capita <- read_csv("Data/incomepercapitainVA.csv")
 
 
   
+perCapitaByYear <- function (yearToUse) {
+  Income_Per_Capita %>% filter(year == yearToUse) %>% select(per.capita.income)
+}
