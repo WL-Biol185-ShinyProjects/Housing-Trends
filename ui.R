@@ -12,9 +12,9 @@ dashboardPage(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
-      menuItem("Income and Race", tabName = "incomepercapita_in_va", icon = icon("money")),
-      menuItem("Education Patterns", tabName = "education_in_va"), 
-      menuItem("Voting Patterns", tabName = "voting_in_va"),
+      menuItem("Income and Race", tabName = "income_and_race", icon = icon("money")),
+      menuItem("Education Patterns", tabName = "education_in_va", icon = icon("university")), 
+      menuItem("Voting Patterns", tabName = "voting_in_va", icon = icon("poll")),
       menuItem("About", tabName = "about", icon = icon("info-circle"))
     )
   ),
@@ -80,6 +80,12 @@ dashboardPage(
       # Bar plot of Race Across Time
       tabItem(tabName="race_in_va",
               fluidRow(
+                box(width = 12, 
+                    h2(class="title", icon("clock"), "Race and Ethnicity"), 
+                    p(class="plot-description", "On this page, you can find visualizations showing how the number of people belonging to the various races change over time - both at the state & county level.")
+                )
+              ),
+              fluidRow(
                 h2("Changes in Race Statistics in Virginia"),
                 box(status = "primary", width = 12, plotOutput("racePlot")),
                 h2("Changes in Race Statistics per County"),
@@ -94,13 +100,25 @@ dashboardPage(
               )
       ),
       # Income Graphs
-      tabItem(tabName ="incomepercapita_in_va",
+      tabItem(tabName ="income_and_race",
+              fluidRow(
+                box(width = 12, 
+                    h2(class="title", icon("money-bill-wave"), "Income and Race"), 
+                    p(class="plot-description", "")
+                )
+              ),
               fluidRow(
                 h2("Income Per Capita in VA"),
                 box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
       )),
       # Election Map
       tabItem(tabName="voting_in_va",
+              fluidRow(
+                box(width = 12, 
+                    h2(class="title", icon("poll"), "Voting Patterns"), 
+                    p(class="plot-description", "Below is a map showing election results for all of Virginia's counties. You can pick years between 2000 and 2016 and see which candidate won in each county.")
+                )
+              ),
               fluidRow(
                 h2("Election Results in VA from 2012 - 2016"),
                 box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
