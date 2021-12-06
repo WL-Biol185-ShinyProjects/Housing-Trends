@@ -4,7 +4,7 @@ library(ggplot2)
 library(tidyverse)
 Income_Per_Capita <- read_csv("Data/incomepercapitainVA.csv")
   #Make the years factors so they don't have decimals
-Income_Per_Capita_Plot <- ggplot(Income_Per_Capita, aes(x = year , y = per.capita.income))+ geom_line(stat='identity')
+Income_Per_Capita_Plot <- ggplot(data = Income_Per_Capita) + geom_line(mapping = aes(x = year, y = per.capita.income))
 
 
   
