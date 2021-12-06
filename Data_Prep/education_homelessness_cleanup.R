@@ -62,4 +62,9 @@ homeless_enrolled_2018_19 <- read_csv("Data/Homelessness/lea-homeless-enrolled-s
 homeless_enrolled_2018_19$year <-"2018-19"
 #Left Join all files
 homeless_enrolled<-
-  left_join(homeless_enrolled_2018_19, homeless_enrolled_2017_18, by='LEANM') 
+  left_join(homeless_enrolled_2018_19, homeless_enrolled_2017_18, by='LEANM') %>%
+  left_join(.,homeless_enrolled_2016_17, by= 'LEANM') %>%
+  left_join(.,homeless_enrolled_2015_16, by= 'LEANM') %>%
+  left_join(.,homeless_enrolled_2014_15, by= 'LEANM') %>%
+  left_join(.,homeless_enrolled_2013_14, by= 'LEANM') 
+
