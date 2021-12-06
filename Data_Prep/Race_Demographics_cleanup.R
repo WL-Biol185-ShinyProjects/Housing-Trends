@@ -208,5 +208,9 @@ merged_race_data <- rbind(gathered_race_estimate_2011,
                           gathered_race_estimate_2016,
                           gathered_race_estimate_2017,
                           gathered_race_estimate_2018,
-                          gathered_race_estimate_2019)
+                          gathered_race_estimate_2019) %>%
+  filter(LSAD=="County")
+ merged_race_data$Race <-  gsub(".", " ", merged_race_data$Race, fixed = TRUE)
+
+
 
