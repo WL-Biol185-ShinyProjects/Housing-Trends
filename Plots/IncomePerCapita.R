@@ -2,9 +2,13 @@
 #Creating a line graph
 library(ggplot2)
 library(tidyverse)
+
 Income_Per_Capita <- read_csv("Data/incomepercapitainVA.csv")
-  #Make the years factors so they don't have decimals
+
+#Make the years factors so they don't have decimals
 Income_Per_Capita_Plot <- ggplot(Income_Per_Capita, aes(x = year , y = per.capita.income))+ geom_line(stat='identity')
 
-
-  
+# function to get income per capita by year for info box on main map
+perCapitaByYear <- function (yearToUse) {
+  Income_Per_Capita %>% filter(year == yearToUse) %>% select(per.capita.income)
+}
