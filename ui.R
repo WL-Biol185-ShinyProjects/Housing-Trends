@@ -11,7 +11,7 @@ dashboardPage(
     sidebarMenu(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
-      menuItem("Race and Ethinicity", tabName = "race_in_va", icon = icon("clock")),
+      menuItem("Race and Ethnicity", tabName = "race_in_va", icon = icon("clock")),
       menuItem("Income and Race", tabName = "income_and_race", icon = icon("money")),
       menuItem("Education Patterns", tabName = "education_in_va", icon = icon("university")), 
       menuItem("Voting Patterns", tabName = "voting_in_va", icon = icon("poll")),
@@ -86,9 +86,9 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Changes in Race Statistics in Virginia"),
+                h2("Population Distribution by Race in Virginia"),
                 box(status = "primary", width = 12, plotOutput("racePlot")),
-                h2("Changes in Race Statistics per County"),
+                h2("Population Distribution by Race by County"),
                 box(status = "primary", width = 8, plotOutput("racePlotII")),
                 box(
                   title = "Controls",
@@ -103,7 +103,7 @@ dashboardPage(
       tabItem(tabName ="income_and_race",
               fluidRow(
                 box(width = 12, 
-                    h2(class="title", icon("money-bill-wave"), "Income and Race"), 
+                    h2(class="title", icon("money-bill-wave"), " Income and Race"), 
                     p(class="plot-description", "")
                 )
               ),
