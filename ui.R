@@ -14,7 +14,6 @@ dashboardPage(
       menuItem("Explore", tabName = "explore", icon = icon("magic")),
       menuItem("Race and Ethnicity", tabName = "race_in_va", icon = icon("clock")),
       menuItem("Income", tabName = "income_and_race", icon = icon("money")),
-      menuItem("Voting Patterns", tabName = "voting_in_va", icon = icon("poll")),
       menuItem("About", tabName = "about", icon = icon("info-circle"))
     )
   ),
@@ -107,6 +106,20 @@ dashboardPage(
                               choices = unique(yearly_crime_est$county[!is.na(yearly_crime_est$total_violent_pop_crime_estimate)]))
                   
                 )
+              ),
+              fluidRow(
+                h2("Election Results in VA from 2012 - 2016"),
+                box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
+                
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  width = 4,
+                  sliderInput(
+                    "electionYear", label = "Year:", sep="", animate=TRUE,
+                    min = 2000, value = 2016, max = 2016, step = 4
+                  )
+                )
               )
       ),
       # Bar plot of Race Across Time
@@ -152,30 +165,6 @@ dashboardPage(
                 box(status = "primary", width = 12, plotOutput("homelessness"))
                 )
               ),
-      
-      # Election Map
-      tabItem(tabName="voting_in_va",
-              fluidRow(
-                box(width = 12, 
-                    h2(class="title", icon("poll"), "Voting Patterns"), 
-                    p(class="plot-description", "Below is a map showing election results for all of Virginia's counties. You can pick years between 2000 and 2016 and see which candidate won in each county.")
-                )
-              ),
-              fluidRow(
-                h2("Election Results in VA from 2012 - 2016"),
-                box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
-                
-                box(
-                  title = "Controls",
-                  status = "warning",
-                  width = 4,
-                  sliderInput(
-                    "electionYear", label = "Year:", sep="", animate=TRUE,
-                    min = 2000, value = 2016, max = 2016, step = 4
-                  )
-                )
-              )
-      ),
       # About Page
       tabItem(tabName="about",
               fluidRow(
