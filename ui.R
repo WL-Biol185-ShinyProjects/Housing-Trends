@@ -12,7 +12,7 @@ dashboardPage(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethnicity", tabName = "race_in_va", icon = icon("clock")),
-      menuItem("Income and Race", tabName = "income_and_race", icon = icon("money")),
+      menuItem("Income", tabName = "income_and_race", icon = icon("money")),
       menuItem("Education Patterns", tabName = "education_in_va", icon = icon("university")), 
       menuItem("Voting Patterns", tabName = "voting_in_va", icon = icon("poll")),
       menuItem("About", tabName = "about", icon = icon("info-circle"))
