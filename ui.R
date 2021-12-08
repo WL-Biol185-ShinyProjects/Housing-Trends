@@ -68,11 +68,12 @@ dashboardPage(
                     min = 2010, value = 2015, max = 2019,
                    ),
                   selectInput("variable", "Variable:",
-                              c("Occupied Housing Units" = "housing_units",
+                              c(
                                 "Population Estimates" = "pop_estimate",
                                 "Median Age Estimates" = "median_age",
                                 "Education Enrollment" = "enrollment_estimate",
-                                "Crime Estimates" = "total_violent_pop_crime_estimate")
+                                "Crime Estimates" = "total_violent_pop_crime_estimate",
+                                "Occupied Housing Units" = "housing_units")
                               )
                   )
                 )
