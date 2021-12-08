@@ -29,6 +29,7 @@ source("Plots/pop_estimates.R")
 source("Plots/crime_VA.R")
 source("Plots/VA_homeless.R")
 source("Plots/Average_Income_Plot.R")
+source("Plots/county_subsidized_housing.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
@@ -49,8 +50,11 @@ function (input, output) {
   # Rendering Crime Plot
   output$crimePlot <- renderPlot({crimePlot(input$crimeCounty)})
 
-  #Rending the average income by race plot 
+  #Rendering the average income by race plot 
   output$Average_Income_Plot <- renderPlot({Average_Income})
+  
+  #Rendering the subsidized housing plot
+  output$subsidizedPlot <- renderPlot({subsidized_housing_plot(input$subCounty)})
   
   # Rendering the occupied housing units map
   # output$housingMap <- renderLeaflet({housingLeafletMap(geo, input$housingYear)})

@@ -4,6 +4,8 @@ library(shinydashboard)
 
 #Source data here
 source("Data_Prep/Race_Demographics_cleanup.R")
+source("Data_Prep/crime_estimates_cleanup.R")
+source("Data_Prep/subsidized_housing_cleanup.R")
 
 dashboardPage(
   dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 600), skin = "green",
@@ -160,6 +162,18 @@ dashboardPage(
                 h2("Average Income by Race"),
                 box(status = "primary", width = 12, plotOutput("Average_Income_Plot"))
               ),
+              fluidRow(
+                h2("Total Subsidized Housing by County"),
+                box(status = "primary", width = 8, plotOutput("subsidizedPlot")),
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  width = 4,
+                  selectInput("subCounty", "County", choices = unique(yearly_subsidized_housing$county))
+                  
+                )
+              ),
+              
               fluidRow(
                 h2("Homelessness in Virginia Overtime"),
                 box(status = "primary", width = 12, plotOutput("homelessness"))
