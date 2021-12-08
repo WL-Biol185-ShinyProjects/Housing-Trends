@@ -12,6 +12,9 @@ source("Plots/electionMap.R")
 source("Plots/IncomePerCapita.R")
 source("Plots/VA_homeless.R")
 source("Plots/crimePlot.R")
+source("Plots/pop_estimates.R")
+source("Plots/crime_VA.R")
+source("Plots/VA_homeless.R")
 source("Plots/Average_Income_Plot.R")
 
 # Importing county json only once to pass in where needed
@@ -51,8 +54,33 @@ function (input, output) {
   # Rendering Value Box showing Per Capita Income in the given year
   output$perCapitaIncomeBox <- renderValueBox({
     valueBox(
+      width = 2,
       perCapitaByYear(input$year), paste("Per Capita Income in ", input$year), icon = icon("money-bill-wave"),
-      color = "green"
+      color = "green" 
     )
+  })
+  output$popEstimatesBox <- renderValueBox({
+    valueBox(
+      popEstimates(input$year),
+      width = 2,
+      paste("Population Estimate of VA in ", input$year), icon = icon("users"),
+      color = "blue" 
+    )
+  })
+    output$crimeEstimatesBox <- renderValueBox({
+      valueBox(
+        crimeEstimates(input$year), 
+        width = 2,
+        paste("Total Violent & Property Crime of VA in ", input$year), icon = icon("gavel"),
+        color = "red" 
+      )
+  })
+    output$homelessEstimatesBox <- renderValueBox({
+     valueBox(
+        homelessEstimates(input$year), 
+        width = 2,
+        paste("Total Homeless in ", input$year) , icon = icon("door-closed"),
+        color = "yellow" 
+      )
   })
 }

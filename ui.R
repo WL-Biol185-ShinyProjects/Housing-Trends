@@ -56,7 +56,11 @@ dashboardPage(
               ),
               # Value boxes showing data by year
               fluidRow(
-                valueBoxOutput("perCapitaIncomeBox")
+
+                valueBoxOutput("perCapitaIncomeBox"),
+                valueBoxOutput("popEstimatesBox"),
+                valueBoxOutput("crimeEstimatesBox"), 
+                valueBoxOutput("homelessEstimatesBox")  
               ),
               # Main Map
               fluidRow(
