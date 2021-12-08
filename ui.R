@@ -8,7 +8,7 @@ source("Data_Prep/crime_estimates_cleanup.R")
 source("Data_Prep/subsidized_housing_cleanup.R")
 
 dashboardPage(
-  dashboardHeader (title = "An Analysis of Housing Trends in Virginia from 2010-2019", titleWidth = 600), skin = "green",
+  dashboardHeader (title = "Exploring Housing Insecurity Related Factors in Virginia", titleWidth = 600), skin = "green",
   dashboardSidebar(
     sidebarMenu(
       menuItem("Home", tabName = "home", icon = icon("home")),
@@ -32,9 +32,18 @@ dashboardPage(
                        "HOUSING TRENDS PROJECT"
                        ),
                     p(class="main-description",
-                      "Insight into factors affecting housing in VA."
+                      "Insight into factors surrounding housing insecurity in VA."
                       )
                     )
+              ),
+              fluidRow(
+                div(class="page-section"),
+                  h2(class = "title",
+                    "BACKGROUND"
+                    ),
+              p(class = "description",
+                "According to the U.S. Department of Housing and Urban Development, housing insecurity is a  a multifaceted term that includes a wide variety of housing problems people may experience, including loss of housing, affordability, safety, quality, and insecurity."
+                 ),
               ),
               fluidRow(
                 div(class="page-section",
@@ -42,7 +51,7 @@ dashboardPage(
                        "What you'll find here"
                     ),
                     p(class="description",
-                      "An interactive tool that helps you explore how housing-related factors change over time in Virginia. You can find information about crime, race demographics, election data, as well as education and see how they affect housing in Virginia's counties."
+                      "An interactive tool that helps you explore how housing insecurity-related factors change over time in Virginia. You can find information about population demographics,income,education attainment,number of occupied housing units, as well as homelessness and see how they may impact housing insecurity in Virginia's counties."
                     )
                 )
               )
@@ -52,7 +61,7 @@ dashboardPage(
               fluidRow(
                 box(width = 12, 
                     h2(class="title", icon("map"), "Main Map"), 
-                    p(class="plot-description", "This map explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia. Factors such as race, education, income, voting, homelessness, etc are displayed over time in the counties.")
+                    p(class="plot-description", "This map explores the changes in a variety of population demographic variables over the previous decade, in the state of Virginia. Factors such as population size,median age, education enrollment, and occupied housing units are displayed.")
                    )
               ),
               # Value boxes showing data by year
@@ -124,12 +133,12 @@ dashboardPage(
                 )
               )
       ),
-      # Bar plot of Race Across Time
+      # Race and Ethnicity Page
       tabItem(tabName="race_in_va",
               fluidRow(
                 box(width = 12, 
                     h2(class="title", icon("clock"), "Race and Ethnicity"), 
-                    p(class="plot-description", "On this page, you can find visualizations showing how the number of people belonging to the various races change over time - both at the state & county level.")
+                    p(class="plot-description", "On this page, you can find visualizations of the population distribution by race over time at the state & county level.")
                 )
               ),
               fluidRow(
@@ -146,12 +155,12 @@ dashboardPage(
                 )
               )
       ),
-      # Income Graphs
+      # Income Page
       tabItem(tabName ="income_and_race",
               fluidRow(
                 box(width = 12, 
-                    h2(class="title", icon("money-bill-wave"), " Income and Race"), 
-                    p(class="plot-description", "")
+                    h2(class="title", icon("money-bill-wave"), " Income"), 
+                    p(class="plot-description", " On this page, you can find graphics of variables related to income such as subsidized housing rates per county, homelessness rates, and average income over time.")
                 )
               ),
               fluidRow(
