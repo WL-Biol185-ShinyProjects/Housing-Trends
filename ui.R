@@ -105,7 +105,7 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Crime in VA"),
+                h2("Crime Rates"),
                 box(status = "primary", width = 8, plotOutput("crimePlot")),
                 box(
                   title = "Controls",
@@ -120,7 +120,7 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Election Results in VA from 2012 - 2016"),
+                h2("Election Results from 2012 - 2016"),
                 box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
                 
                 box(
@@ -143,9 +143,9 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Population Distribution by Race in Virginia"),
+                h2("Population Distribution (VA)"),
                 box(status = "primary", width = 12, plotOutput("racePlot")),
-                h2("Population Distribution by Race by County"),
+                h2("Population Distribution (County)"),
                 box(status = "primary", width = 8, plotOutput("racePlotII")),
                 box(
                   title = "Controls",
@@ -185,7 +185,7 @@ dashboardPage(
               ),
               
               fluidRow(
-                h2("Homelessness in Virginia Overtime"),
+                h2("Homelessness"),
                 box(status = "primary", width = 12, plotOutput("homelessness"))
                 )
               ),
