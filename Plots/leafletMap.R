@@ -46,11 +46,15 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   
   
   # Final leaflet map to output
-  leaflet(geo) %>% 
+  leaflet(geo, options = leafletOptions(minZoom = 7)) %>% 
     setView(-79.442778, 37.783889, 8) %>%
     addPolygons(fillColor = ~pal(geo[[dataToUse]]),color = "white", weight = 1, smoothFactor = 0.5,
                 opacity = 1.0, fillOpacity = 0.5, label = labels) %>%
-    addLegend( pal=pal, values=geo[[dataToUse]], opacity=0.9, title = "Legend", position = "bottomleft" )
+    addLegend( pal=pal, values=geo[[dataToUse]], opacity=0.9, title = "Legend", position = "bottomleft" ) %>%
+    setMaxBounds( lng1 = -83.94011
+                  , lat1 = 39.64454
+                  , lng2 = -75.04414
+                  , lat2 = 36)
 }
 
 
