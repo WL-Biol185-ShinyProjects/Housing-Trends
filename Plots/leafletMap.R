@@ -34,7 +34,10 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   geo@data <- geo@data[geo@data$STATE == 51,]
   
   # Prepping colors for chloropleth
-  bins <- c(0,20000,30000,40000, 50000, Inf)
+  # bins <- c(0,20000,30000,40000, 50000, Inf)
+  # print(geo[[dataToUse]])
+  bins <- seq(min(geo[[dataToUse]], na.rm = TRUE), to = max(geo[[dataToUse]], na.rm = TRUE) * (4/5), by = max(geo[[dataToUse]], na.rm = TRUE) / 5)
+  bins <- c(bins, Inf)
   pal <- colorBin("YlOrRd", domain = geo[[dataToUse]], na.color = "transparent", bins = bins)
   
   # Labels to show on hover
@@ -51,6 +54,7 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
                 opacity = 1.0, fillOpacity = 0.5, label = labels) %>%
     addLegend( pal=pal, values=geo[[dataToUse]], opacity=0.9, title = "Legend", position = "bottomleft" )
 }
+
 
 
 # geo <- readOGR("Data/counties.json")
