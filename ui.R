@@ -37,13 +37,14 @@ dashboardPage(
                     )
               ),
               fluidRow(
-                div(class="page-section"),
+                div(class="page-section",
                   h2(class = "title",
                     "BACKGROUND"
                     ),
               p(class = "description",
                 "According to the U.S. Department of Housing and Urban Development, housing insecurity is a  a multifaceted term that includes a wide variety of housing problems people may experience, including loss of housing, affordability, safety, quality, and insecurity."
-                 ),
+                 )
+              )
               ),
               fluidRow(
                 div(class="page-section",
@@ -164,10 +165,12 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Income Per Capita in VA"),
-                box(status = "primary", width = 6, plotOutput("IncomePerCapita")),
-                h2("Average Income by Race"),
-                box(status = "primary", width = 6, plotOutput("Average_Income_Plot")
+                box(status = "primary", width = 6, 
+                    h2("Income Per Capita in VA"),
+                    plotOutput("IncomePerCapita")),
+                box(status = "primary", width = 6, 
+                    h2("Average Income by Race"),
+                    plotOutput("Average_Income_Plot")
               )),
               fluidRow(
                 h2("Total Subsidized Housing by County"),
