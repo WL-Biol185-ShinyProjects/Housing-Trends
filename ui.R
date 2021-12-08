@@ -29,7 +29,7 @@ dashboardPage(
               fluidRow(
                 div(class="banner",
                     h2(class="main-title",
-                       "HOUSING TRENDS PROJECT"
+                       "HOUSING INSECURITY TRENDS PROJECT"
                        ),
                     p(class="main-description",
                       "Insight into factors surrounding housing insecurity in VA."
