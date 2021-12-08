@@ -39,7 +39,14 @@ allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   #bins <- seq(min(geo[[dataToUse]], na.rm = TRUE), to = max(geo[[dataToUse]], na.rm = TRUE) * (4/5), by = max(geo[[dataToUse]], na.rm = TRUE) / 5)
   bins <- unique(quantile(geo[[dataToUse]],probs=seq.int(0,1, by=1/4), na.rm = TRUE))
   bins <- c(bins, Inf)
-  pal <- colorBin("YlOrRd", domain = geo[[dataToUse]], na.color = "transparent", bins = bins)
+  
+  palettes <- c("pop_estimate" = "YlOrRd",
+                "median_age" = "YlGnBu",
+                "enrollment_estimate" = "Blues",
+                "total_violent_pop_crime_estimate" = "BuGn",
+                "housing_units" = "Greys")
+  
+  pal <- colorBin(palettes[[dataToUse]], domain = geo[[dataToUse]], na.color = "transparent", bins = bins)
   
   # Labels to show on hover
   labels <- sprintf(
