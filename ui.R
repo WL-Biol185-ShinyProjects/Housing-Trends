@@ -232,8 +232,14 @@ dashboardPage(
                     h2(class="title", icon("table"), "The Data")),
                 div(class="references",
                   shiny::tags$ul(
-                    shiny::tags$li("Some reference")
-                  )
+                    shiny::tags$li("“Datasets: HUD USER.” DATASETS | HUD USER, https://www.huduser.gov/portal/pdrdatas_landing.html. ")
+                    ),  shiny::tags$li("“FBI Crime Data .” Social Explorer, https://www.socialexplorer.com/tables/FBI19/R12986569.  "),
+                  shiny::tags$li("Education, Virginia Department of. “Data for Researchers &amp; Developers.” VDOE:: Statistics and Reports; Data for Researchers &amp; Developers, https://www.doe.virginia.gov/statistics_reports/research_data/index.shtml."),
+                  shiny::tags$li("MIT Election Data and Science Lab, 2017, “U.S. President 1976–2020”, https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V6, UNF:6:4KoNz9KgTkXy0ZBxJ9ZkOw== [fileUNF]"),
+                  shiny::tags$li("“Mean Income in the Past 12 Months .” Explore Census Data, https://https://data.census.gov/cedsci/table?q=per%20capita%20income%20per%20county%20in%20virginia&tid=ACSST1Y2019.S1902."),
+                    shiny::tags$li("“Per Capita Income in the Past 12 Months .” Explore Census Data, https://data.census.gov/cedsci/table?q=per+capita+income+in+Virginia&amp;tid=ACSDT1Y2019.B19301. "),
+                shiny::tags$li("“Virginia Population Estimates.” Weldon Cooper Center for Public Service, https://demographics.coopercenter.org/virginia-population-estimates. ")
+                    
                 )
                 
               )
