@@ -4,13 +4,19 @@ h2 {
   font-family: 'Outfit', sans-serif;
 }
 
+.main-header .logo {
+  background-color: black;
+}
+
 .banner {
-  background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+  background-color: black;
+  color: white;
   padding: 100px 0;
 }
 
 .content {
-  padding-top:0
+  padding-top:0;
+  background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
 }
 
 /* Home Page Styles */
@@ -31,6 +37,10 @@ h2 {
   color: green;
   text-align: center;
   font-size: 40px;
+}
+
+.page-section .title {
+  color: white;
 }
 
 .description {

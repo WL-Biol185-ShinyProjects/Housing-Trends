@@ -68,11 +68,12 @@ dashboardPage(
                     min = 2010, value = 2015, max = 2019,
                    ),
                   selectInput("variable", "Variable:",
-                              c("Occupied Housing Units" = "housing_units",
+                              c(
                                 "Population Estimates" = "pop_estimate",
                                 "Median Age Estimates" = "median_age",
                                 "Education Enrollment" = "enrollment_estimate",
-                                "Crime Estimates" = "total_violent_pop_crime_estimate")
+                                "Crime Estimates" = "total_violent_pop_crime_estimate",
+                                "Occupied Housing Units" = "housing_units")
                               )
                   )
                 )
@@ -110,7 +111,12 @@ dashboardPage(
               fluidRow(
                 h2("Income Per Capita in VA"),
                 box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
-      )),
+              ),
+              fluidRow(
+                h2("Homelessness in Virginia Overtime"),
+                box(status = "primary", width = 12, plotOutput("homelessness"))
+                )),
+      
       # Election Map
       tabItem(tabName="voting_in_va",
               fluidRow(
