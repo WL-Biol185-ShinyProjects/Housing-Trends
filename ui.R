@@ -75,10 +75,10 @@ dashboardPage(
                    ),
                   selectInput("variable", "Variable:",
                               c(
-                                "Population Estimates" = "pop_estimate",
-                                "Median Age Estimates" = "median_age",
-                                "Education Enrollment" = "enrollment_estimate",
-                                "Crime Estimates" = "total_violent_pop_crime_estimate",
+                                "Population Size" = "pop_estimate",
+                                "Median Age" = "median_age",
+                                "Education Attainment" = "enrollment_estimate",
+                                "Total Crime " = "total_violent_pop_crime_estimate",
                                 "Occupied Housing Units" = "housing_units")
                               )
                   )
