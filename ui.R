@@ -156,12 +156,10 @@ dashboardPage(
               ),
               fluidRow(
                 h2("Income Per Capita in VA"),
-                box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
-              ),
-              fluidRow(
+                box(status = "primary", width = 6, plotOutput("IncomePerCapita")),
                 h2("Average Income by Race"),
-                box(status = "primary", width = 12, plotOutput("Average_Income_Plot"))
-              ),
+                box(status = "primary", width = 6, plotOutput("Average_Income_Plot")
+              )),
               fluidRow(
                 h2("Total Subsidized Housing by County"),
                 box(status = "primary", width = 8, plotOutput("subsidizedPlot")),
