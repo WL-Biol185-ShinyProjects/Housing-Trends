@@ -128,6 +128,7 @@ dashboardPage(
                 )
               ),
               fluidRow(
+
                 h2("Election Results in Virginia from 2012 - 2016"),
                 box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
                 
@@ -151,9 +152,9 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Population Distribution by Race in Virginia"),
+                h2("Population Distribution (VA)"),
                 box(status = "primary", width = 12, plotOutput("racePlot")),
-                h2("Population Distribution by Race by County"),
+                h2("Population Distribution (County)"),
                 box(status = "primary", width = 8, plotOutput("racePlotII")),
                 box(
                   title = "Controls",
@@ -183,12 +184,12 @@ dashboardPage(
               fluidRow(
                 h2("Total Subsidized Housing by County"),
                 box(status = "primary", width = 8, plotOutput("subsidizedPlot")),
-                box(
-                  title = "Controls",
-                  status = "warning",
-                  width = 4,
-                  selectInput("subCounty", "County", choices = unique(yearly_subsidized_housing$county))
-                  
+                box(width = 4,
+                  selectInput("subCounty", 
+                              "County",
+                              multiple = TRUE,
+                              selected = "Accomack",
+                              choices = unique(yearly_subsidized_housing$county[!is.na(yearly_subsidized_housing$total_subsidized_housing)]))
                 )
               ),
               
