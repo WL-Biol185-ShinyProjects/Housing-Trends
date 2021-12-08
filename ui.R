@@ -92,7 +92,15 @@ dashboardPage(
                                 "Education Enrollment" = "enrollment_estimate",
                                 "Total Crime " = "total_violent_pop_crime_estimate",
                                 "Occupied Housing Units" = "housing_units")
-                              )
+                              ),
+                  h2("Variable Descriptions"),
+                  shiny::tags$ul(
+                    shiny::tags$li(strong("Population Size: "), "An estimate of total population per county."),
+                    shiny::tags$li(strong("Median Age: "), "The median age of the given population."),
+                    shiny::tags$li(strong("Education Enrollment: "), "Number of students enrolled in higher education."),
+                    shiny::tags$li(strong("Total Crime: "), "Total Violent and Property Crimes per county."),
+                    shiny::tags$li(strong("Occupied Housing Units: "), "A house, an apartment, a mobile home, a group of rooms, or a single room that is occupied with a person or group of persons.")
+                  )
                   )
                 )
               ),
