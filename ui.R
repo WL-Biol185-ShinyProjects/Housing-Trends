@@ -175,10 +175,10 @@ dashboardPage(
               ),
               fluidRow(
                 box(status = "primary", width = 6, 
-                    h2("Per Capita Income in Virginia"),
+                    h2("Inflation Adjusted Per Capita Income in Virginia"),
                     plotOutput("IncomePerCapita")),
                 box(status = "primary", width = 6, 
-                    h2("Average Income by Race"),
+                    h2("Inflation Adjusted Average Income by Race"),
                     plotOutput("Average_Income_Plot")
               )),
               fluidRow(
