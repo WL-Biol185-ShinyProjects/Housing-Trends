@@ -11,6 +11,7 @@ dashboardPage(
     sidebarMenu(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
+      menuItem("Explore", tabName = "explore", icon = icon("magic")),
       menuItem("Race and Ethnicity", tabName = "race_in_va", icon = icon("clock")),
       menuItem("Income", tabName = "income_and_race", icon = icon("money")),
       menuItem("Voting Patterns", tabName = "voting_in_va", icon = icon("poll")),
@@ -80,6 +81,30 @@ dashboardPage(
                   )
                 )
               ),
+      #Explore Page
+      tabItem(tabName="explore",
+              fluidRow(
+                box(width = 12, 
+                    h2(class="title", icon("magic"), "Explore"), 
+                    p(class="plot-description", "")
+                )
+              ),
+              fluidRow(
+                h2("Crime in VA"),
+                box(status = "primary", width = 8, plotOutput("crimePlot")),
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  width = 4,
+                  selectInput("crimeCounty", 
+                              "County",
+                              multiple = TRUE,
+                              selected = "Accomack",
+                              choices = unique(yearly_crime_est$county[!is.na(yearly_crime_est$total_violent_pop_crime_estimate)]))
+                  
+                )
+              )
+      ),
       # Bar plot of Race Across Time
       tabItem(tabName="race_in_va",
               fluidRow(
