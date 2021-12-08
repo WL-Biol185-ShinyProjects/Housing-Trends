@@ -52,7 +52,7 @@ dashboardPage(
                 box(width = 12, 
                     h2(class="title", icon("map"), "Main Map"), 
                     p(class="plot-description", "This map explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia. Factors such as race, education, income, voting, homelessness, etc are displayed over time in the counties.")
-                    )
+                   )
               ),
               # Value boxes showing data by year
               fluidRow(
@@ -138,6 +138,10 @@ dashboardPage(
               fluidRow(
                 h2("Income Per Capita in VA"),
                 box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
+              ),
+              fluidRow(
+                h2("Average Income by Race"),
+                box(status = "primary", width = 12, plotOutput("Average_Income_Plot"))
               ),
               fluidRow(
                 h2("Homelessness in Virginia Overtime"),
