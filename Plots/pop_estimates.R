@@ -1,4 +1,3 @@
-library(readxl)
 #getting the population estimates for VA
 
 co_est2019_VA <- read_excel("Data/Population Estimates/co_est2019_VA.xlsx")

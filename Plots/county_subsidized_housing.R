@@ -1,7 +1,3 @@
-library(tidyverse)
-
-source("Data_Prep/subsidized_housing_cleanup.R")
-
 #graphs for subsidized housing
 subsidized_housing_plot <- function (county) {
   yearly_subsidized_housing %>% mutate(year = factor(year)) %>% filter(county==county, LSAD == "County") %>%

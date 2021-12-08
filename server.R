@@ -1,13 +1,26 @@
 library(shiny)
 library(tidyverse)
 library(leaflet)
+library(readxl)
+library(rgdal)
 
-# Importing the plots here so we can separate each plot's logic and prevent conflict
+# Clean Data Imports
+source("Data_Prep/population_estimates_cleanup.R")
+source("Data_Prep/DCOHU_data_cleanup.R")
+source("Data_Prep/MedianAgeEstimate_cleanup.R")
+source("Data_Prep/education_estimates_cleanup.R")
+source("Data_Prep/crime_estimates_cleanup.R")
+source("Data_Prep/subsidized_housing_cleanup.R")
+source("Data_Prep/Income_per_capita_race_cleanup.R")
+source("Data_Prep/presidential_voting_cleanup.R")
+source("Data_Prep/race_data_cleanup.R")
+
+
+
+# Plot Imports
 source("Plots/racePlot.R")
-# source("Plots/housingLeafletMap.R")
-# source("Plots/popEstLeafletMap.R")
-source("Plots/leafletMap.R")
 source("Plots/racePlotII.R")
+source("Plots/leafletMap.R")
 source("Plots/electionMap.R")
 source("Plots/IncomePerCapita.R")
 source("Plots/VA_homeless.R")

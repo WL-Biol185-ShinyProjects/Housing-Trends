@@ -1,7 +1,3 @@
-library(tidyverse)
-
-source("Data_Prep/race_data_cleanup.R")
-
 racePlot <- race_ethnicity %>%
   mutate(year = factor(year)) %>%
   group_by(race, year) %>%

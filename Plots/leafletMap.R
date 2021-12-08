@@ -1,13 +1,3 @@
-library(leaflet)
-library(rgdal)
-library(tidyverse)
-
-source("Data_Prep/population_estimates_cleanup.R")
-source("Data_Prep/DCOHU_data_cleanup.R")
-source("Data_Prep/MedianAgeEstimate_cleanup.R")
-source("Data_Prep/education_estimates_cleanup.R")
-source("Data_Prep/crime_estimates_cleanup.R")
-
 allLeafletMap <- function (originalGeo, yearToUse, dataToUse) {
   # Reset json
   geo <- originalGeo
