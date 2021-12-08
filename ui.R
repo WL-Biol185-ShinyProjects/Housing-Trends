@@ -92,7 +92,15 @@ dashboardPage(
                                 "Education Enrollment" = "enrollment_estimate",
                                 "Total Crime " = "total_violent_pop_crime_estimate",
                                 "Occupied Housing Units" = "housing_units")
-                              )
+                              ),
+                  h2("Variable Descriptions"),
+                  shiny::tags$ul(
+                    shiny::tags$li(strong("Population Size: "), "An estimate of total population per county."),
+                    shiny::tags$li(strong("Median Age: "), "The median age of the given population."),
+                    shiny::tags$li(strong("Education Enrollment: "), "Number of students enrolled in higher education."),
+                    shiny::tags$li(strong("Total Crime: "), "Total Violent and Property Crimes per county."),
+                    shiny::tags$li(strong("Occupied Housing Units: "), "A house, an apartment, a mobile home, a group of rooms, or a single room that is occupied with a person or group of persons.")
+                  )
                   )
                 )
               ),
@@ -105,7 +113,7 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Crime Rates"),
+                h2("Crime Counts in Virginia"),
                 box(status = "primary", width = 8, plotOutput("crimePlot")),
                 box(
                   title = "Controls",
@@ -120,7 +128,8 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Election Results from 2012 - 2016"),
+
+                h2("Election Results in Virginia from 2012 - 2016"),
                 box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
                 
                 box(
@@ -166,7 +175,7 @@ dashboardPage(
               ),
               fluidRow(
                 box(status = "primary", width = 6, 
-                    h2("Income Per Capita in VA"),
+                    h2("Per Capita Income in Virginia"),
                     plotOutput("IncomePerCapita")),
                 box(status = "primary", width = 6, 
                     h2("Average Income by Race"),
@@ -181,13 +190,11 @@ dashboardPage(
                               multiple = TRUE,
                               selected = "Accomack",
                               choices = unique(yearly_subsidized_housing$county[!is.na(yearly_subsidized_housing$total_subsidized_housing)]))
-                  
-                  
                 )
               ),
               
               fluidRow(
-                h2("Homelessness"),
+                h2("Homelessness in Virginia from 2010-2019"),
                 box(status = "primary", width = 12, plotOutput("homelessness"))
                 )
               ),
