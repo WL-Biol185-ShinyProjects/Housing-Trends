@@ -69,19 +69,19 @@ function (input, output) {
   output$theMap <- renderLeaflet({allLeafletMap(geo, input$year, input$variable)})
   
   # Rendering Value Box showing Per Capita Income in the given year
-  output$perCapitaIncomeBox <- renderValueBox({
-    valueBox(
-      width = 2,
-      perCapitaByYear(input$year), paste("Per Capita Income in ", input$year), icon = icon("money-bill-wave"),
-      color = "green" 
-    )
-  })
   output$popEstimatesBox <- renderValueBox({
     valueBox(
       popEstimates(input$year),
       width = 2,
       paste("Population Estimate of VA in ", input$year), icon = icon("users"),
       color = "blue" 
+    )
+  })
+  output$perCapitaIncomeBox <- renderValueBox({
+    valueBox(
+      width = 2,
+      perCapitaByYear(input$year), paste("Per Capita Income in ", input$year), icon = icon("money-bill-wave"),
+      color = "green" 
     )
   })
     output$crimeEstimatesBox <- renderValueBox({
@@ -92,12 +92,11 @@ function (input, output) {
         color = "red" 
       )
   })
-    output$homelessEstimatesBox <- renderValueBox({
-     valueBox(
-        homelessEstimates(input$year), 
-        width = 2,
-        paste("Total Homeless in ", input$year) , icon = icon("door-closed"),
-        color = "yellow" 
-      )
-  })
+    # #output$homelessEstimatesBox <- renderValueBox({
+    #  valueBox(
+    #     homelessEstimates(input$year), 
+    #     width = 2,
+    #     paste("Total Homeless in ", input$year) , icon = icon("door-closed"),
+    #     color = "yellow" 
+    #   )
 }
