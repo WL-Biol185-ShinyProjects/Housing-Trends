@@ -1,4 +1,3 @@
-library(readxl)
 #getting the total violent and propert crime estimates for VA
 
 crime_VA <- read_excel("Data/Crime/crime_VA.xlsx")

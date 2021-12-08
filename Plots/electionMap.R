@@ -1,9 +1,3 @@
-library(leaflet)
-library(rgdal)
-library(tidyverse)
-
-source("Data_Prep/presidential_voting_cleanup.R")
-
 electionMap <- function (originalGeo, yearToUse) {
   # Reset json
   geo <- originalGeo
