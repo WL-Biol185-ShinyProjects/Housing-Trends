@@ -11,13 +11,11 @@ source("Plots/racePlotII.R")
 source("Plots/electionMap.R")
 source("Plots/IncomePerCapita.R")
 source("Plots/VA_homeless.R")
-<<<<<<< HEAD
 source("Plots/pop_estimates.R")
 source("Plots/crime_VA.R")
 source("Plots/VA_homeless.R")
-=======
 source("Plots/Average_Income_Plot.R")
->>>>>>> dcb793490a88c8002ae6623300a14759945fda92
+
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
