@@ -12,8 +12,7 @@ dashboardPage(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Main Map", tabName = "maps", icon = icon("map")),
       menuItem("Race and Ethnicity", tabName = "race_in_va", icon = icon("clock")),
-      menuItem("Income and Race", tabName = "income_and_race", icon = icon("money")),
-      menuItem("Education Patterns", tabName = "education_in_va", icon = icon("university")), 
+      menuItem("Income", tabName = "income_and_race", icon = icon("money")),
       menuItem("Voting Patterns", tabName = "voting_in_va", icon = icon("poll")),
       menuItem("About", tabName = "about", icon = icon("info-circle"))
     )
@@ -26,21 +25,24 @@ dashboardPage(
       #Home Page
       tabItem(tabName="home",
               fluidRow(
-                HTML("
-                                     
-                     <div class='banner'>
-                      <h2 class='main-title'>HOUSING TRENDS PROJECT</h2>
-                      <p class='main-description'>Insight into factors affecting housing in VA.</p>
-                     </div>
-                     ")
+                div(class="banner",
+                    h2(class="main-title",
+                       "HOUSING TRENDS PROJECT"
+                       ),
+                    p(class="main-description",
+                      "Insight into factors affecting housing in VA."
+                      )
+                    )
               ),
               fluidRow(
-                HTML("
-                     <section class='page-section'>
-                      <h2 class='title'>What you'll find here</h2>
-                      <p class='description'>An interactive tool that helps you explore how housing-related factors change over time in Virginia. You can find information about crime, race demographics, election data, as well as education and see how they affect housing in Virginia's counties.</p>
-                     </section>
-                     ")
+                div(class="page-section",
+                    h2(class="title",
+                       "What you'll find here"
+                    ),
+                    p(class="description",
+                      "An interactive tool that helps you explore how housing-related factors change over time in Virginia. You can find information about crime, race demographics, election data, as well as education and see how they affect housing in Virginia's counties."
+                    )
+                )
               )
               ),
       # All Maps
@@ -49,7 +51,7 @@ dashboardPage(
                 box(width = 12, 
                     h2(class="title", icon("map"), "Main Map"), 
                     p(class="plot-description", "This map explores the changes in a variety of housing demographic variables over the previous decade, in the state of Virginia. Factors such as race, education, income, voting, homelessness, etc are displayed over time in the counties.")
-                    )
+                   )
               ),
               # Value boxes showing data by year
               fluidRow(
@@ -117,9 +119,14 @@ dashboardPage(
                 box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
               ),
               fluidRow(
+                h2("Average Income by Race"),
+                box(status = "primary", width = 12, plotOutput("Average_Income_Plot"))
+              ),
+              fluidRow(
                 h2("Homelessness in Virginia Overtime"),
                 box(status = "primary", width = 12, plotOutput("homelessness"))
-                )),
+                )
+              ),
       
       # Election Map
       tabItem(tabName="voting_in_va",
@@ -147,50 +154,44 @@ dashboardPage(
       # About Page
       tabItem(tabName="about",
               fluidRow(
-                HTML("           
-                     <div class='mini-banner'>
-                      <h2 class=''>ABOUT THIS PROJECT</h2>
-                     </div>
-                     ")
+                div(class="mini-banner about-banner",
+                    h2("ABOUT THIS PROJECT"))
               ),
+              
               fluidRow(
-                h2(class="title", icon("users"), "The Team")
-              ),
-              fluidRow(class="cards-container",
-                       column(6, class="cards",
-                              HTML("
-                     <div class='card'>
-                      <img src='images/Betelihim.jpg' alt='Avatar' style='width:100%'>
-                      <div class='container'>
-                        <h4 class='name'><b>Betelihim Haile</b></h4>
-                        <p class='year'>Class of 2022</p>
-                        <p><b>Major: </b>Neuroscience</p>
-                      </div>
-                    </div>
-                     "),
-                              HTML("
-                     <div class='card'>
-                      <img src='images/Carolina.jpg' alt='Avatar' style='width:100%'>
-                      <div class='container'>
-                        <h4 class='name'><b>Carolina Rubio Regalado</b></h4>
-                        <p class='year'>Class of 2022</p>
-                        <p><b>Major: </b>Sociology &amp; Anthropology</p>
-                      </div>
-                    </div>
-                     "),
-                              HTML("
-                     <div class='card'>
-                      <img src='images/Yoseph.jpg' alt='Avatar' style='width:100%'>
-                      <div class='container'>
-                        <h4 class='name'><b>Yoseph Tamene</b></h4>
-                        <p class='year'>Class of 2022</p>
-                        <p><b>Major: </b>Computer Science</p>
-                      </div>
-                    </div>
-                     ")))
+                div(class="page-section",
+                    fluidRow(
+                      h2(class="title", icon("users"), "The Team")
+                    ),
+                    fluidRow(class="cards-container",
+                             column(8, class="cards",
+                                    div(class="card",
+                                        img(src='images/Betelihim.jpg', alt='Avatar', style='width:100%'),
+                                        div(class="container",
+                                            h4(class="name", strong("Betelihim Haile")),
+                                            p(class="year", "Class of 2022"),
+                                            p(strong("Major:"), "Neuroscience")
+                                        )),
+                                    div(class="card",
+                                        img(src='images/Carolina.jpg', alt='Avatar', style='width:100%'),
+                                        div(class="container",
+                                            h4(class="name", strong("Carolina Rubio Regalado")),
+                                            p(class="year", "Class of 2022"),
+                                            p(strong("Major:"), "Sociology & Anthropology")
+                                        )),
+                                    div(class="card",
+                                        img(src='images/Yoseph.jpg', alt='Avatar', style='width:100%'),
+                                        div(class="container",
+                                            h4(class="name", strong("Yoseph Tamene")),
+                                            p(class="year", "Class of 2022"),
+                                            p(strong("Major:"), "Computer Science")
+                                        )))
+                    ))
+                )
               ,
               fluidRow(
-                h2(class="title", icon("table"), "The Data")
+                div(class="page-section",
+                    h2(class="title", icon("table"), "The Data"))
               )
       )
     )
