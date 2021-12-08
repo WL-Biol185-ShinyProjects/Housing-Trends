@@ -175,11 +175,13 @@ dashboardPage(
               fluidRow(
                 h2("Total Subsidized Housing by County"),
                 box(status = "primary", width = 8, plotOutput("subsidizedPlot")),
-                box(
-                  title = "Controls",
-                  status = "warning",
-                  width = 4,
-                  selectInput("subCounty", "County", choices = unique(yearly_subsidized_housing$county))
+                box(width = 4,
+                  selectInput("subCounty", 
+                              "County",
+                              multiple = TRUE,
+                              selected = "Accomack",
+                              choices = unique(yearly_subsidized_housing$county[!is.na(yearly_subsidized_housing$total_subsidized_housing)]))
+                  
                   
                 )
               ),
