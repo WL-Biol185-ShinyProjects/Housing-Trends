@@ -110,7 +110,12 @@ dashboardPage(
               fluidRow(
                 h2("Income Per Capita in VA"),
                 box(status = "primary", width = 12, plotOutput("IncomePerCapita"))
-      )),
+              ),
+              fluidRow(
+                h2("Homelessness in Virginia Overtime"),
+                box(status = "primary", width = 12, plotOutput("homelessness"))
+                )),
+      
       # Election Map
       tabItem(tabName="voting_in_va",
               fluidRow(

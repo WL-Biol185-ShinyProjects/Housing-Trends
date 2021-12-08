@@ -10,6 +10,7 @@ source("Plots/leafletMap.R")
 source("Plots/racePlotII.R")
 source("Plots/electionMap.R")
 source("Plots/IncomePerCapita.R")
+source("Plots/VA_homeless.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
@@ -17,7 +18,12 @@ geo <- readOGR("Data/counties.json")
 function (input, output) {
   # Rendering the bar plot
   output$racePlot <- renderPlot({racePlot})
+  
+  #Rendering the race line graph per county
   output$racePlotII <- renderPlot({racePlotII(input$county)})
+  
+  #Rendering the VA Homelessnes line graph
+  output$homelessness <- renderPlot({homelessness})
   
   #Rendering the income plot
   output$IncomePerCapita <- renderPlot({Income_Per_Capita_Plot})
