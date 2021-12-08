@@ -11,6 +11,7 @@ source("Plots/racePlotII.R")
 source("Plots/electionMap.R")
 source("Plots/IncomePerCapita.R")
 source("Plots/VA_homeless.R")
+source("Plots/Average_Income_Plot.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
@@ -27,6 +28,9 @@ function (input, output) {
   
   #Rendering the income plot
   output$IncomePerCapita <- renderPlot({Income_Per_Capita_Plot})
+  
+  #Rending the average income by race plot 
+  output$Average_Income_Plot <- renderPlot({Average_Income})
   
   # Rendering the occupied housing units map
   # output$housingMap <- renderLeaflet({housingLeafletMap(geo, input$housingYear)})

@@ -101,4 +101,5 @@ merged_income_race_data <- rbind(Income_Per_Capita_Race_2019,
                                  Income_Per_Capita_Race_2013,
                                  Income_Per_Capita_Race_2012,
                                  Income_Per_Capita_Race_2011)
+merged_income_race_data$Race_Ethnicity <- str_trim(merged_income_race_data$Race_Ethnicity)
 
