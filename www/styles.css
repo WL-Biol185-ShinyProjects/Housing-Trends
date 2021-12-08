@@ -117,3 +117,9 @@ h2 {
   font-size: 25px;
 }
 
+.references {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 40px;
+}

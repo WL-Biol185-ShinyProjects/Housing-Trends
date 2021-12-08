@@ -229,7 +229,13 @@ dashboardPage(
               ,
               fluidRow(
                 div(class="page-section",
-                    h2(class="title", icon("table"), "The Data"))
+                    h2(class="title", icon("table"), "The Data")),
+                div(class="references",
+                  shiny::tags$ul(
+                    shiny::tags$li("Some reference")
+                  )
+                )
+                
               )
       )
     )
