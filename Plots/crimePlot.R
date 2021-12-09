@@ -15,6 +15,6 @@
 crimePlot <- function(chosenCounties) {
   yearly_crime_est %>% filter(county %in% chosenCounties) %>%
     ggplot(aes(x = factor(year), total_violent_pop_crime_estimate, color=county, group = county)) + 
-    geom_line() + xlab("Year") + ylab("Violent Crime Estimate") + labs(color = "Counties")
+    geom_line(size=0.75) + xlab("Year") + ylab("Violent Crime Estimate") + labs(color = "Counties") +  scale_color_brewer(palette = "Spectral")
 }
 
