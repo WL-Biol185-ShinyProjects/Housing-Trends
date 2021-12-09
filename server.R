@@ -81,7 +81,7 @@ function (input, output) {
     valueBox(
       width = 2,
       perCapitaByYear(input$year), paste("Per Capita Income in ", input$year), icon = icon("money-bill-wave"),
-      color = "green" 
+      color = "purple" 
     )
   })
     output$crimeEstimatesBox <- renderValueBox({
