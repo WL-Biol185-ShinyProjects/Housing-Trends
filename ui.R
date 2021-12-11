@@ -113,8 +113,7 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Crime Counts in Virginia"),
-                box(status = "primary", width = 8, plotOutput("crimePlot")),
+                box(status = "primary", width = 8, h2("Crime Counts in Virginia"), plotOutput("crimePlot")),
                 box(
                   title = "Controls",
                   status = "warning",
@@ -128,9 +127,7 @@ dashboardPage(
                 )
               ),
               fluidRow(
-
-                h2("Election Results in Virginia from 2012 - 2016"),
-                box(status = "primary", width = 8, leafletOutput("electionMap", height = 900)),
+                box(status = "primary", width = 8, h2("Election Results in Virginia from 2012 - 2016"), leafletOutput("electionMap", height = 900)),
                 
                 box(
                   title = "Controls",
@@ -152,10 +149,8 @@ dashboardPage(
                 )
               ),
               fluidRow(
-                h2("Population Distribution (VA)"),
-                box(status = "primary", width = 12, plotOutput("racePlot")),
-                h2("Population Distribution (County)"),
-                box(status = "primary", width = 8, plotOutput("racePlotII")),
+                box(status = "primary", width = 12, h2("Population Distribution (VA)"), plotOutput("racePlot")),
+                box(status = "primary", width = 8,  h2("Population Distribution (County)"), plotOutput("racePlotII")),
                 box(
                   title = "Controls",
                   status = "warning",
@@ -182,8 +177,7 @@ dashboardPage(
                     plotOutput("Average_Income_Plot")
               )),
               fluidRow(
-                h2("Total Subsidized Housing by County"),
-                box(status = "primary", width = 8, plotOutput("subsidizedPlot")),
+                box(status = "primary", width = 8, h2("Total Subsidized Housing by County"), plotOutput("subsidizedPlot")),
                 box(width = 4,
                   selectInput("subCounty", 
                               "County",
@@ -194,8 +188,7 @@ dashboardPage(
               ),
               
               fluidRow(
-                h2("Homelessness in Virginia from 2010-2019"),
-                box(status = "primary", width = 12, plotOutput("homelessness"))
+                box(status = "primary", width = 12, h2("Homelessness in Virginia from 2010-2019"), plotOutput("homelessness"))
                 )
               ),
       # About Page
