@@ -14,7 +14,7 @@ source("Data_Prep/subsidized_housing_cleanup.R")
 source("Data_Prep/Income_per_capita_race_cleanup.R")
 source("Data_Prep/presidential_voting_cleanup.R")
 source("Data_Prep/race_data_cleanup.R")
-
+source("Data_Prep/education_homelessness_cleanup.R")
 
 
 # Plot Imports
@@ -30,6 +30,7 @@ source("Plots/crime_VA.R")
 source("Plots/VA_homeless.R")
 source("Plots/Average_Income_Plot.R")
 source("Plots/county_subsidized_housing.R")
+source("Plots/homeless_students.R")
 
 # Importing county json only once to pass in where needed
 geo <- readOGR("Data/counties.json")
@@ -49,6 +50,10 @@ function (input, output) {
   
   # Rendering Crime Plot
   output$crimePlot <- renderPlot({crimePlot(input$crimeCounty)})
+  
+  
+  # Rendering Student Plot
+  output$education_homelessness <- renderPlot({education_homelessness_plot(input$studentCounty)})
 
   #Rendering the average income by race plot 
   output$Average_Income_Plot <- renderPlot({Average_Income})

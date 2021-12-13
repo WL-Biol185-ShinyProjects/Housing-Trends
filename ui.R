@@ -127,6 +127,20 @@ dashboardPage(
                 )
               ),
               fluidRow(
+                box(status = "primary", width = 8, h2("Students Experiencing Homelessness in Virginia"), plotOutput("education_homelessness")),
+                box(
+                  title = "Controls",
+                  status = "warning",
+                  width = 4,
+                  selectInput("studentCounty", 
+                              "LEANM",
+                              multiple = TRUE,
+                              selected = "ACCOMACK CO PBLC SCHS",
+                              choices = unique(homeless_students_enrolled$LEANM[!is.na(homeless_students_enrolled$student_counts)]))
+                  
+                )
+              ),
+              fluidRow(
                 box(status = "primary", width = 8, h2("Election Results in Virginia from 2012 - 2016"), leafletOutput("electionMap", height = 900)),
                 
                 box(
