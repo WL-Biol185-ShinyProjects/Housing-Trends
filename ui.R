@@ -6,6 +6,7 @@ library(shinydashboard)
 source("Data_Prep/Race_Demographics_cleanup.R")
 source("Data_Prep/crime_estimates_cleanup.R")
 source("Data_Prep/subsidized_housing_cleanup.R")
+source("Data_Prep/education_homelessness_cleanup.R")
 
 dashboardPage(
   dashboardHeader (title = "Exploring Housing Insecurity Related Factors in Virginia", titleWidth = 600), skin = "green",
